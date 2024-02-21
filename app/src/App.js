@@ -8,11 +8,13 @@ const App = () => {
     const surfaceMagnitudes = data.map(d => ({ Surface: d.Data.Magnitude.Surface }))
       .filter(d => d.Surface > 0); // Filter out entries with 0.0, assuming they're placeholders
     
-    const bodyMagnitudes = data.map(d => ({ Body: d.Data.Magnitude.Body }))
-    .filter(d => d.Body > 0);    
+    const depthBodyData = data.map(d => ({ Upper: d.Data.Yield.Upper, Body: d.Data.Magnitude.Body }));
+      //.filter(d => d.Body > 0 && d.Upper > 0);    
+    
+    const yieldUpper = data.map(d => ({ Upper: d.Data.Yield.Upper }))
+      .filter(d => d.Upper > 0);  
 
     const specSurface = {
-      $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
       description: 'Histogram of Nuclear Explosion Surface Magnitudes',
       data: {
         values: surfaceMagnitudes
@@ -28,41 +30,73 @@ const App = () => {
           aggregate: 'count',
           title: 'Frequency'
         }
-      }
+      },
+      tooltip: [
+        { field: 'Surface', type: 'quantitative' }
+      ]
     };
 
-const specBody = {
-      $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
-      description: 'Histogram of Nuclear Explosion Body Magnitudes',
+    const specBody = {
+      description: 'Scatter plot of Nuclear Explosion Body Magnitudes vs. Depth',
       data: {
-        values: bodyMagnitudes
+        values: depthBodyData
+      },
+      mark: 'point',
+      encoding: {
+        x: {
+          field: 'Body',
+          type: 'quantitative',
+          title: 'Upper Bound'
+        },
+        y: {
+          field: 'Upper',
+          type: 'quantitative',
+          title: 'Body Magnitude'
+        }
+      },
+      tooltip: [
+        { field: 'Upper', type: 'quantitative' },
+        { field: 'Body', type: 'quantitative' }
+      ]
+    };
+
+    const specUpper = {
+      description: 'Histogram of Explosion yield upper estimate in kilotons of TNT',
+      data: {
+        values: yieldUpper
       },
       mark: 'bar',
       encoding: {
         x: {
-          field: 'Body',
+          field: 'Upper',
           bin: true,
-          title: 'Body Magnitude'
+          title: 'Explosion yield upper estimate in kilotons of TNT'
         },
         y: {
           aggregate: 'count',
           title: 'Frequency'
         }
-      }
+      },
+      tooltip: [
+        { field: 'Upper', type: 'quantitative' }
+      ]
     };
 
-
     // Embed the first graph
-    vegaEmbed('#surface-magnitude', specSurface, { actions: false });
+    vegaEmbed('#surface-magnitude', specSurface, { actions: true });
 
-    // Embed the second graph
-    vegaEmbed('#body-magnitude', specBody, { actions: false });
+    // Embed the modified second graph for Depth vs. Body Magnitude
+    vegaEmbed('#body-magnitude', specBody, { actions: true });
+
+    // Embed the third graph
+    vegaEmbed('#explosion-yield', specUpper, { actions: true });
 
   }, []);
   return (
-    <div>
+    <div className="root">
       <div id="surface-magnitude"></div>
       <div id="body-magnitude"></div>
+      <div id="explosion-yield"></div>
       {/* more graphs */}
     </div>
   );
