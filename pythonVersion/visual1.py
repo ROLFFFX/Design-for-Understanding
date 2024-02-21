@@ -1,7 +1,8 @@
 import streamlit as st
 import json
-import matplotlib.pyplot as plt
-from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+import plotly.express as px
+import pandas as pd
+
 
 st.set_page_config(layout="wide")
 
@@ -14,36 +15,38 @@ def load_data():
 
 data = load_data()
 
-
 years = [bomb['Date']['Year'] for bomb in data]
 min_year, max_year = min(years), max(years)
 
-# Dynamic year selection
 selected_year = st.slider('Select a year', min_year, max_year, min_year)
 filtered_data = [bomb for bomb in data if bomb['Date']['Year'] == selected_year]
 
-fig, ax = plt.subplots(figsize = (13, 7.5))
+df = pd.DataFrame(filtered_data)
 
-# Load and set the background image
-img = plt.imread('worldmap.jpg')
-ax.imshow(img, extent=[-180, 180, -90, 90], aspect='auto')
+df['Latitude'] = df.apply(lambda x: x.get('Location', {}).get('Coordinates', {}).get('Latitude', None), axis=1)
+df['Longitude'] = df.apply(lambda x: x.get('Location', {}).get('Coordinates', {}).get('Longitude', None), axis=1)
+df['size'] = df.apply(lambda x: x.get('Data', {}).get('Yield', {}).get('Upper', None), axis=1)
+df['name'] = df.apply(lambda x: x.get('Data', {}).get('Name', {}), axis=1)
 
-# Set x and y axis limits
-ax.set_xlim([-180, 180])
-ax.set_ylim([-90, 90])
+fig = px.scatter_geo(df,
+                     lat='Latitude',
+                     lon='Longitude',
+                     size='size',
+                     hover_name='name',  
+                     hover_data=["name", "size"],  
+                     projection="equirectangular",
+                     title='Nuclear Explosions by Year',size_max=200)
 
-for bomb in filtered_data:
-    
-    # Calculate pixel size based on yield; you might need to define the conversion
-    pixel_size = bomb['Data']['Yield']['Upper'] * 1
-    # Example plotting command, replace with actual coordinates and sizes
-    ax.scatter(bomb['Location']['Coordinates']['Longitude'], bomb['Location']['Coordinates']['Latitude'], s=pixel_size)
-    
-plt.title('Nuclear Explosions by Year')
-plt.xlabel('Longitude')
-plt.ylabel('Latitude')
+fig.update_geos(
+    landcolor="rgb(243, 243, 243)",
+    countrycolor="rgb(204, 204, 204)"
+)
 
-# Display the plot in the Streamlit app
+fig.update_layout(
+    width=1000,  
+    height=600,  
+)
+
 col1, col2, col3 = st.columns([2,8,2])
 with col2:
-    st.pyplot(fig)
+    st.plotly_chart(fig, use_container_width=True)
