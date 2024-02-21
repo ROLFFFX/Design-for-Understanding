@@ -1,0 +1,25 @@
+#root {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* If you want to handle smaller screens */
+}
+
+.graph-container {
+  flex-basis: calc(50% - 20px); /* Adjust the percentage as needed */
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Tooltip container */
+.tooltip {
+  text-align: center;
+  padding: 4px;
+  border: 1px solid #da1818;
+  background-color: #615f5f;
+  position: absolute;
+  /* bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; */
+}
