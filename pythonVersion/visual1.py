@@ -35,7 +35,7 @@ fig = px.scatter_geo(df,
                      hover_name='name',  
                      hover_data=["name", "size"],  
                      projection="equirectangular",
-                     title='Nuclear Explosions by Year',size_max=200)
+                     title='Nuclear Explosions by Year',size_max=10)
 
 fig.update_geos(
     landcolor="rgb(243, 243, 243)",
