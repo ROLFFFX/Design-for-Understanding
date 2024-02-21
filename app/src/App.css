@@ -1,12 +1,10 @@
 #root {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Use the full height of the viewport */
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-/* If you have a specific ID for the Vega chart, you can target it directly */
-#vega-chart {
-  width: 80%; /* Adjust width as needed */
-  margin: auto; /* This will center the chart horizontally if it has a width */
+#root > div {
+  width: 45%;
+  margin: 2%;
 }
