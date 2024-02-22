@@ -1,8 +1,7 @@
+import { Grid } from "@mui/material";
+import { useEffect } from "react";
 import vegaEmbed from "vega-embed";
 import data from "../nuclear_explosions.json";
-import { useEffect } from "react";
-import Box from "@mui/material/Box";
-import { Grid } from "@mui/material";
 
 const customGridStyle = {
   height: "50vh",
