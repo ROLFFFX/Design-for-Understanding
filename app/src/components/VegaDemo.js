@@ -1,6 +1,15 @@
 import vegaEmbed from "vega-embed";
 import data from "../nuclear_explosions.json";
 import { useEffect } from "react";
+import Box from "@mui/material/Box";
+import { Grid } from "@mui/material";
+
+const customGridStyle = {
+  height: "50vh",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+};
 
 export default function VegaDemo() {
   useEffect(() => {
@@ -95,9 +104,21 @@ export default function VegaDemo() {
   }, []);
   return (
     <div className="root">
-      <div id="surface-magnitude"></div>
-      <div id="body-magnitude"></div>
-      <div id="explosion-yield"></div>
+      {/* Assuming a 4x4 grid */}
+      <Grid container>
+        <Grid item xs={6} sx={customGridStyle}>
+          <div id="surface-magnitude"></div>
+        </Grid>
+        <Grid item xs={6} sx={customGridStyle}>
+          <div id="body-magnitude"></div>
+        </Grid>
+        <Grid item xs={6} sx={customGridStyle}>
+          <div id="explosion-yield"></div>
+        </Grid>
+        <Grid item xs={6} sx={customGridStyle}>
+          More Graphs
+        </Grid>
+      </Grid>
       {/* more graphs */}
     </div>
   );
