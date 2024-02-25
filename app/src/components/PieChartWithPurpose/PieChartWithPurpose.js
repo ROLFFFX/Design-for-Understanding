@@ -28,8 +28,8 @@ CustomLabel.defaultEvents = VictoryTooltip.defaultEvents;
 
 export default function PieChartWithPurpose() {
   const transformedData = pair.map((item, index) => ({
-    x: item.purpose, // This will be used for the tooltip
-    y: item.frequency, // This will be used to determine the size of the pie slices
+    x: item.purpose,
+    y: item.frequency,
   }));
 
   return (
@@ -37,7 +37,7 @@ export default function PieChartWithPurpose() {
       style={{ labels: { fill: "white" } }}
       innerRadius={80}
       labelRadius={110}
-      labels={({ datum }) => `# ${datum.x}`}
+      labels={({ datum }) => ``}
       labelComponent={<CustomLabel />}
       data={transformedData}
     />
