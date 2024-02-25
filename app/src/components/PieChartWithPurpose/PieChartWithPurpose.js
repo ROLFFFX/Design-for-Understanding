@@ -1,5 +1,6 @@
 import React from "react";
 import { VictoryLabel, VictoryPie, VictoryTooltip } from "victory";
+import pair from "./data/purpose_frequency_pair.json";
 
 class CustomLabel extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class CustomLabel extends React.Component {
           flyoutWidth={100}
           flyoutHeight={100}
           flyoutStyle={{ fill: "black" }}
+          text={({ datum }) => `${datum.x}: ${datum.y}`}
         />
       </g>
     );
@@ -25,20 +27,19 @@ class CustomLabel extends React.Component {
 CustomLabel.defaultEvents = VictoryTooltip.defaultEvents;
 
 export default function PieChartWithPurpose() {
+  const transformedData = pair.map((item, index) => ({
+    x: item.purpose, // This will be used for the tooltip
+    y: item.frequency, // This will be used to determine the size of the pie slices
+  }));
+
   return (
     <VictoryPie
       style={{ labels: { fill: "white" } }}
       innerRadius={80}
       labelRadius={110}
-      labels={({ datum }) => `# ${datum.y}`}
+      labels={({ datum }) => `# ${datum.x}`}
       labelComponent={<CustomLabel />}
-      data={[
-        { x: 1, y: 5 },
-        { x: 2, y: 4 },
-        { x: 3, y: 2 },
-        { x: 4, y: 3 },
-        { x: 5, y: 1 },
-      ]}
+      data={transformedData}
     />
   );
 }
