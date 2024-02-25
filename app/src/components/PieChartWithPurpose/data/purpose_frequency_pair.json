@@ -1,0 +1,114 @@
+[
+  {
+    "purpose": "Wr",
+    "frequency": 1490
+  },
+  {
+    "purpose": "Combat",
+    "frequency": 2
+  },
+  {
+    "purpose": "We",
+    "frequency": 181
+  },
+  {
+    "purpose": "Me",
+    "frequency": 1
+  },
+  {
+    "purpose": "Se",
+    "frequency": 71
+  },
+  {
+    "purpose": "Fms",
+    "frequency": 33
+  },
+  {
+    "purpose": "Sb",
+    "frequency": 5
+  },
+  {
+    "purpose": "Sam",
+    "frequency": 25
+  },
+  {
+    "purpose": "Pne:Plo",
+    "frequency": 27
+  },
+  {
+    "purpose": "Transp",
+    "frequency": 4
+  },
+  {
+    "purpose": "Pne:V",
+    "frequency": 7
+  },
+  {
+    "purpose": "Nan",
+    "frequency": 1
+  },
+  {
+    "purpose": "Pne",
+    "frequency": 153
+  },
+  {
+    "purpose": "Wr/Se",
+    "frequency": 11
+  },
+  {
+    "purpose": "Wr/We",
+    "frequency": 2
+  },
+  {
+    "purpose": "Wr/Pne",
+    "frequency": 3
+  },
+  {
+    "purpose": "Wr/Sam",
+    "frequency": 6
+  },
+  {
+    "purpose": "Pne/Wr",
+    "frequency": 2
+  },
+  {
+    "purpose": "Se/Wr",
+    "frequency": 2
+  },
+  {
+    "purpose": "Wr/P/Sa",
+    "frequency": 1
+  },
+  {
+    "purpose": "We/Sam",
+    "frequency": 3
+  },
+  {
+    "purpose": "We/Wr",
+    "frequency": 3
+  },
+  {
+    "purpose": "Wr/F/Sa",
+    "frequency": 2
+  },
+  {
+    "purpose": "Wr/Fms",
+    "frequency": 6
+  },
+  {
+    "purpose": "Fms/Wr",
+    "frequency": 2
+  },
+  {
+    "purpose": "Wr/P/S",
+    "frequency": 1
+  },
+  {
+    "purpose": "Wr/F/S",
+    "frequency": 1
+  },
+  {
+    "purpose": "Wr/We/S",
+    "frequency": 1
+  }
+]

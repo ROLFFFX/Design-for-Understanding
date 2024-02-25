@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import { useEffect } from "react";
 import vegaEmbed from "vega-embed";
 import data from "../nuclear_explosions.json";
+import PieChartWithPurpose from "./PieChartWithPurpose/PieChartWithPurpose";
 
 const customGridStyle = {
   height: "50vh",
@@ -115,7 +116,7 @@ export default function VegaDemo() {
           <div id="explosion-yield"></div>
         </Grid>
         <Grid item xs={6} sx={customGridStyle}>
-          More Graphs
+          <PieChartWithPurpose />
         </Grid>
       </Grid>
       {/* more graphs */}
