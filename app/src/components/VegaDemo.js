@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import vegaEmbed from "vega-embed";
 import data from "../nuclear_explosions.json";
 import PieChartWithPurpose from "./PieChartWithPurpose/PieChartWithPurpose";
+import StackedBarChartTestPerYear from "./StackedBarChartTestPerYear/StackedBarChartTestPerYear";
 
 const customGridStyle = {
   height: "50vh",
@@ -113,7 +114,8 @@ export default function VegaDemo() {
           <div id="body-magnitude"></div>
         </Grid>
         <Grid item xs={6} sx={customGridStyle}>
-          <div id="explosion-yield"></div>
+          {/* <div id="explosion-yield"></div> */}
+          <StackedBarChartTestPerYear />
         </Grid>
         <Grid item xs={6} sx={customGridStyle}>
           <PieChartWithPurpose />

@@ -18,6 +18,7 @@
     "vega": "^5.27.0",
     "vega-embed": "^6.24.0",
     "vega-lite": "^5.16.3",
+    "victory": "^36.9.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
