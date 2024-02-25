@@ -1,0 +1,827 @@
+[
+  {
+    "countryName": "USA",
+    "year": "1945-01-01T04:00:00.000Z",
+    "testNumber": 3
+  },
+  {
+    "countryName": "USA",
+    "year": "1946-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "USA",
+    "year": "1948-01-01T05:00:00.000Z",
+    "testNumber": 3
+  },
+  {
+    "countryName": "USSR",
+    "year": "1949-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1951-01-01T05:00:00.000Z",
+    "testNumber": 16
+  },
+  {
+    "countryName": "USSR",
+    "year": "1951-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "USA",
+    "year": "1952-01-01T05:00:00.000Z",
+    "testNumber": 10
+  },
+  {
+    "countryName": "UK",
+    "year": "1952-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1953-01-01T05:00:00.000Z",
+    "testNumber": 11
+  },
+  {
+    "countryName": "USSR",
+    "year": "1953-01-01T05:00:00.000Z",
+    "testNumber": 5
+  },
+  {
+    "countryName": "UK",
+    "year": "1953-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "USA",
+    "year": "1954-01-01T05:00:00.000Z",
+    "testNumber": 6
+  },
+  {
+    "countryName": "USSR",
+    "year": "1954-01-01T05:00:00.000Z",
+    "testNumber": 10
+  },
+  {
+    "countryName": "USA",
+    "year": "1955-01-01T05:00:00.000Z",
+    "testNumber": 18
+  },
+  {
+    "countryName": "USSR",
+    "year": "1955-01-01T05:00:00.000Z",
+    "testNumber": 6
+  },
+  {
+    "countryName": "USA",
+    "year": "1956-01-01T05:00:00.000Z",
+    "testNumber": 18
+  },
+  {
+    "countryName": "USSR",
+    "year": "1956-01-01T05:00:00.000Z",
+    "testNumber": 9
+  },
+  {
+    "countryName": "UK",
+    "year": "1956-01-01T05:00:00.000Z",
+    "testNumber": 6
+  },
+  {
+    "countryName": "USSR",
+    "year": "1957-01-01T05:00:00.000Z",
+    "testNumber": 16
+  },
+  {
+    "countryName": "USA",
+    "year": "1957-01-01T05:00:00.000Z",
+    "testNumber": 32
+  },
+  {
+    "countryName": "UK",
+    "year": "1957-01-01T05:00:00.000Z",
+    "testNumber": 7
+  },
+  {
+    "countryName": "USSR",
+    "year": "1958-01-01T05:00:00.000Z",
+    "testNumber": 34
+  },
+  {
+    "countryName": "USA",
+    "year": "1958-01-01T05:00:00.000Z",
+    "testNumber": 77
+  },
+  {
+    "countryName": "UK",
+    "year": "1958-01-01T05:00:00.000Z",
+    "testNumber": 5
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1960-01-01T05:00:00.000Z",
+    "testNumber": 3
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1961-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "USSR",
+    "year": "1961-01-01T05:00:00.000Z",
+    "testNumber": 59
+  },
+  {
+    "countryName": "USA",
+    "year": "1961-01-01T05:00:00.000Z",
+    "testNumber": 10
+  },
+  {
+    "countryName": "USA",
+    "year": "1962-01-01T05:00:00.000Z",
+    "testNumber": 95
+  },
+  {
+    "countryName": "USSR",
+    "year": "1962-01-01T05:00:00.000Z",
+    "testNumber": 79
+  },
+  {
+    "countryName": "UK",
+    "year": "1962-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1962-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1963-01-01T05:00:00.000Z",
+    "testNumber": 47
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1963-01-01T05:00:00.000Z",
+    "testNumber": 3
+  },
+  {
+    "countryName": "USA",
+    "year": "1964-01-01T05:00:00.000Z",
+    "testNumber": 45
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1964-01-01T05:00:00.000Z",
+    "testNumber": 3
+  },
+  {
+    "countryName": "USSR",
+    "year": "1964-01-01T05:00:00.000Z",
+    "testNumber": 9
+  },
+  {
+    "countryName": "UK",
+    "year": "1964-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1964-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1965-01-01T05:00:00.000Z",
+    "testNumber": 38
+  },
+  {
+    "countryName": "USSR",
+    "year": "1965-01-01T05:00:00.000Z",
+    "testNumber": 14
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1965-01-01T05:00:00.000Z",
+    "testNumber": 4
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1965-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "UK",
+    "year": "1965-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1966-01-01T05:00:00.000Z",
+    "testNumber": 48
+  },
+  {
+    "countryName": "USSR",
+    "year": "1966-01-01T05:00:00.000Z",
+    "testNumber": 18
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1966-01-01T05:00:00.000Z",
+    "testNumber": 7
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1966-01-01T05:00:00.000Z",
+    "testNumber": 3
+  },
+  {
+    "countryName": "USA",
+    "year": "1967-01-01T05:00:00.000Z",
+    "testNumber": 42
+  },
+  {
+    "countryName": "USSR",
+    "year": "1967-01-01T05:00:00.000Z",
+    "testNumber": 17
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1967-01-01T05:00:00.000Z",
+    "testNumber": 3
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1967-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "USSR",
+    "year": "1968-01-01T05:00:00.000Z",
+    "testNumber": 17
+  },
+  {
+    "countryName": "USA",
+    "year": "1968-01-01T05:00:00.000Z",
+    "testNumber": 56
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1968-01-01T05:00:00.000Z",
+    "testNumber": 3
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1968-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1969-01-01T05:00:00.000Z",
+    "testNumber": 46
+  },
+  {
+    "countryName": "USSR",
+    "year": "1969-01-01T05:00:00.000Z",
+    "testNumber": 19
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1969-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "USA",
+    "year": "1970-01-01T05:00:00.000Z",
+    "testNumber": 39
+  },
+  {
+    "countryName": "USSR",
+    "year": "1970-01-01T05:00:00.000Z",
+    "testNumber": 16
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1970-01-01T05:00:00.000Z",
+    "testNumber": 8
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1970-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USSR",
+    "year": "1971-01-01T05:00:00.000Z",
+    "testNumber": 23
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1971-01-01T05:00:00.000Z",
+    "testNumber": 5
+  },
+  {
+    "countryName": "USA",
+    "year": "1971-01-01T05:00:00.000Z",
+    "testNumber": 24
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1971-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1972-01-01T05:00:00.000Z",
+    "testNumber": 27
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1972-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "USSR",
+    "year": "1972-01-01T05:00:00.000Z",
+    "testNumber": 23
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1972-01-01T05:00:00.000Z",
+    "testNumber": 4
+  },
+  {
+    "countryName": "USA",
+    "year": "1973-01-01T05:00:00.000Z",
+    "testNumber": 24
+  },
+  {
+    "countryName": "USSR",
+    "year": "1973-01-01T05:00:00.000Z",
+    "testNumber": 17
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1973-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1973-01-01T05:00:00.000Z",
+    "testNumber": 6
+  },
+  {
+    "countryName": "USA",
+    "year": "1974-01-01T05:00:00.000Z",
+    "testNumber": 22
+  },
+  {
+    "countryName": "USSR",
+    "year": "1974-01-01T05:00:00.000Z",
+    "testNumber": 21
+  },
+  {
+    "countryName": "INDIA",
+    "year": "1974-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "UK",
+    "year": "1974-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1974-01-01T05:00:00.000Z",
+    "testNumber": 9
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1974-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1975-01-01T05:00:00.000Z",
+    "testNumber": 22
+  },
+  {
+    "countryName": "USSR",
+    "year": "1975-01-01T05:00:00.000Z",
+    "testNumber": 19
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1975-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1975-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1976-01-01T05:00:00.000Z",
+    "testNumber": 20
+  },
+  {
+    "countryName": "USSR",
+    "year": "1976-01-01T05:00:00.000Z",
+    "testNumber": 21
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1976-01-01T05:00:00.000Z",
+    "testNumber": 4
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1976-01-01T05:00:00.000Z",
+    "testNumber": 5
+  },
+  {
+    "countryName": "UK",
+    "year": "1976-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1977-01-01T05:00:00.000Z",
+    "testNumber": 20
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1977-01-01T05:00:00.000Z",
+    "testNumber": 9
+  },
+  {
+    "countryName": "USSR",
+    "year": "1977-01-01T05:00:00.000Z",
+    "testNumber": 24
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1977-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1978-01-01T05:00:00.000Z",
+    "testNumber": 19
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1978-01-01T05:00:00.000Z",
+    "testNumber": 11
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1978-01-01T05:00:00.000Z",
+    "testNumber": 3
+  },
+  {
+    "countryName": "USSR",
+    "year": "1978-01-01T05:00:00.000Z",
+    "testNumber": 31
+  },
+  {
+    "countryName": "UK",
+    "year": "1978-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "USSR",
+    "year": "1979-01-01T05:00:00.000Z",
+    "testNumber": 31
+  },
+  {
+    "countryName": "USA",
+    "year": "1979-01-01T05:00:00.000Z",
+    "testNumber": 15
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1979-01-01T05:00:00.000Z",
+    "testNumber": 10
+  },
+  {
+    "countryName": "UK",
+    "year": "1979-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1980-01-01T05:00:00.000Z",
+    "testNumber": 12
+  },
+  {
+    "countryName": "USA",
+    "year": "1980-01-01T05:00:00.000Z",
+    "testNumber": 14
+  },
+  {
+    "countryName": "USSR",
+    "year": "1980-01-01T05:00:00.000Z",
+    "testNumber": 24
+  },
+  {
+    "countryName": "UK",
+    "year": "1980-01-01T05:00:00.000Z",
+    "testNumber": 3
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1980-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1981-01-01T05:00:00.000Z",
+    "testNumber": 16
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1981-01-01T05:00:00.000Z",
+    "testNumber": 12
+  },
+  {
+    "countryName": "USSR",
+    "year": "1981-01-01T05:00:00.000Z",
+    "testNumber": 21
+  },
+  {
+    "countryName": "UK",
+    "year": "1981-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1982-01-01T05:00:00.000Z",
+    "testNumber": 18
+  },
+  {
+    "countryName": "USSR",
+    "year": "1982-01-01T05:00:00.000Z",
+    "testNumber": 19
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1982-01-01T05:00:00.000Z",
+    "testNumber": 10
+  },
+  {
+    "countryName": "UK",
+    "year": "1982-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1982-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1983-01-01T05:00:00.000Z",
+    "testNumber": 18
+  },
+  {
+    "countryName": "USSR",
+    "year": "1983-01-01T05:00:00.000Z",
+    "testNumber": 25
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1983-01-01T05:00:00.000Z",
+    "testNumber": 9
+  },
+  {
+    "countryName": "UK",
+    "year": "1983-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1983-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1984-01-01T05:00:00.000Z",
+    "testNumber": 18
+  },
+  {
+    "countryName": "USSR",
+    "year": "1984-01-01T05:00:00.000Z",
+    "testNumber": 27
+  },
+  {
+    "countryName": "UK",
+    "year": "1984-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1984-01-01T05:00:00.000Z",
+    "testNumber": 8
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1984-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "USSR",
+    "year": "1985-01-01T05:00:00.000Z",
+    "testNumber": 10
+  },
+  {
+    "countryName": "USA",
+    "year": "1985-01-01T05:00:00.000Z",
+    "testNumber": 17
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1985-01-01T05:00:00.000Z",
+    "testNumber": 8
+  },
+  {
+    "countryName": "UK",
+    "year": "1985-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1986-01-01T05:00:00.000Z",
+    "testNumber": 14
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1986-01-01T05:00:00.000Z",
+    "testNumber": 8
+  },
+  {
+    "countryName": "UK",
+    "year": "1986-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1987-01-01T05:00:00.000Z",
+    "testNumber": 14
+  },
+  {
+    "countryName": "USSR",
+    "year": "1987-01-01T05:00:00.000Z",
+    "testNumber": 23
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1987-01-01T05:00:00.000Z",
+    "testNumber": 8
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1987-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "UK",
+    "year": "1987-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USSR",
+    "year": "1988-01-01T05:00:00.000Z",
+    "testNumber": 16
+  },
+  {
+    "countryName": "USA",
+    "year": "1988-01-01T05:00:00.000Z",
+    "testNumber": 15
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1988-01-01T05:00:00.000Z",
+    "testNumber": 8
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1988-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USSR",
+    "year": "1989-01-01T05:00:00.000Z",
+    "testNumber": 7
+  },
+  {
+    "countryName": "USA",
+    "year": "1989-01-01T05:00:00.000Z",
+    "testNumber": 11
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1989-01-01T05:00:00.000Z",
+    "testNumber": 9
+  },
+  {
+    "countryName": "UK",
+    "year": "1989-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1990-01-01T05:00:00.000Z",
+    "testNumber": 8
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1990-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1990-01-01T05:00:00.000Z",
+    "testNumber": 6
+  },
+  {
+    "countryName": "USSR",
+    "year": "1990-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "UK",
+    "year": "1990-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1991-01-01T05:00:00.000Z",
+    "testNumber": 7
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1991-01-01T05:00:00.000Z",
+    "testNumber": 6
+  },
+  {
+    "countryName": "UK",
+    "year": "1991-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "USA",
+    "year": "1992-01-01T05:00:00.000Z",
+    "testNumber": 6
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1992-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1993-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1994-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1995-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1995-01-01T05:00:00.000Z",
+    "testNumber": 5
+  },
+  {
+    "countryName": "FRANCE",
+    "year": "1996-01-01T05:00:00.000Z",
+    "testNumber": 1
+  },
+  {
+    "countryName": "CHINA",
+    "year": "1996-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "INDIA",
+    "year": "1998-01-01T05:00:00.000Z",
+    "testNumber": 2
+  },
+  {
+    "countryName": "PAKIST",
+    "year": "1998-01-01T05:00:00.000Z",
+    "testNumber": 2
+  }
+]
