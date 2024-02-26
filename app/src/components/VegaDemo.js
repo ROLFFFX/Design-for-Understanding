@@ -1,12 +1,13 @@
-import { Grid } from "@mui/material";
+import { Divider, Grid } from "@mui/material";
 import { useEffect } from "react";
 import vegaEmbed from "vega-embed";
 import data from "../nuclear_explosions.json";
 import PieChartWithPurpose from "./PieChartWithPurpose/PieChartWithPurpose";
 import StackedBarChartTestPerYear from "./StackedBarChartTestPerYear/StackedBarChartTestPerYear";
+import TemporaryDrawer from "./Utilities/SideDrawer";
 
 const customGridStyle = {
-  height: "50vh",
+  height: "49vh",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -107,17 +108,21 @@ export default function VegaDemo() {
     <div className="root">
       {/* Assuming a 4x4 grid */}
       <Grid container>
-        <Grid item xs={6} sx={customGridStyle} border={1}>
+        <Grid item xs={1}>
+          <TemporaryDrawer />
+        </Grid>
+        <Grid item xs={5} sx={customGridStyle}>
           <div id="surface-magnitude"></div>
         </Grid>
-        <Grid item xs={6} sx={customGridStyle} border={1}>
+        <Grid item xs={6} sx={customGridStyle}>
           <div id="body-magnitude"></div>
         </Grid>
-        <Grid item xs={6} sx={customGridStyle} border={1}>
+        <Divider sx={{ width: "100%" }}></Divider>
+        <Grid item xs={6} sx={customGridStyle}>
           {/* <div id="explosion-yield"></div> */}
           <StackedBarChartTestPerYear />
         </Grid>
-        <Grid item xs={6} sx={customGridStyle} border={1}>
+        <Grid item xs={6} sx={customGridStyle}>
           <PieChartWithPurpose />
         </Grid>
       </Grid>
