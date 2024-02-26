@@ -23,7 +23,7 @@ fs.readFile(inputFile, "utf8", (err, data) => {
     if (!acc[key]) {
       acc[key] = {
         countryName: country,
-        year: new Date(curr.Date.Year, 0, 1), // Set to January 1st of the year
+        year: new Date(curr.Date.Year, 0, 1),
         testNumber: 1,
       };
     } else {
