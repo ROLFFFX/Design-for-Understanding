@@ -1,5 +1,10 @@
 import React from "react";
+import TemporaryDrawer from "./Utilities/SideDrawer";
 
 export default function HomePage() {
-  return <div>hello this is homepage</div>;
+  return (
+    <div>
+      <TemporaryDrawer />
+    </div>
+  );
 }
