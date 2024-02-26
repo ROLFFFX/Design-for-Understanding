@@ -1,7 +1,6 @@
 import React from "react";
 import { VictoryLabel, VictoryPie, VictoryTooltip } from "victory";
 import pair from "./data/purpose_frequency_pair.json";
-import { Grid } from "@mui/material";
 
 class CustomLabel extends React.Component {
   render() {

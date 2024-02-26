@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
 import VegaDemo from "./components/VegaDemo.js";
+import { outlet, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
