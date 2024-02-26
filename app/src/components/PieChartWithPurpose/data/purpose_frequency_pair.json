@@ -1,27 +1,33 @@
 [
   {
     "purpose": "Wr",
-    "frequency": 1490
+    "frequency": 1528,
+    "explanation": "Weapons development program"
   },
   {
     "purpose": "Combat",
-    "frequency": 2
+    "frequency": 2,
+    "explanation": "WWII bombs dropped over Japan"
   },
   {
     "purpose": "We",
-    "frequency": 181
+    "frequency": 187,
+    "explanation": "British, French, US, evaluate effects of nuclear detonation on various targets"
   },
   {
     "purpose": "Me",
-    "frequency": 1
+    "frequency": 1,
+    "explanation": "Military Exercise"
   },
   {
     "purpose": "Se",
-    "frequency": 71
+    "frequency": 73,
+    "explanation": "French/US tests - testing safety of nuclear weapons in case of accident"
   },
   {
     "purpose": "Fms",
-    "frequency": 33
+    "frequency": 35,
+    "explanation": "Soviet test, study phenomenon of nuclear explosion"
   },
   {
     "purpose": "Sb",
@@ -29,19 +35,13 @@
   },
   {
     "purpose": "Sam",
-    "frequency": 25
-  },
-  {
-    "purpose": "Pne:Plo",
-    "frequency": 27
+    "frequency": 25,
+    "explanation": "Soviet test, accidental mode/emergency"
   },
   {
     "purpose": "Transp",
-    "frequency": 4
-  },
-  {
-    "purpose": "Pne:V",
-    "frequency": 7
+    "frequency": 4,
+    "explanation": "Transportation-storage purposes"
   },
   {
     "purpose": "Nan",
@@ -49,66 +49,7 @@
   },
   {
     "purpose": "Pne",
-    "frequency": 153
-  },
-  {
-    "purpose": "Wr/Se",
-    "frequency": 11
-  },
-  {
-    "purpose": "Wr/We",
-    "frequency": 2
-  },
-  {
-    "purpose": "Wr/Pne",
-    "frequency": 3
-  },
-  {
-    "purpose": "Wr/Sam",
-    "frequency": 6
-  },
-  {
-    "purpose": "Pne/Wr",
-    "frequency": 2
-  },
-  {
-    "purpose": "Se/Wr",
-    "frequency": 2
-  },
-  {
-    "purpose": "Wr/P/Sa",
-    "frequency": 1
-  },
-  {
-    "purpose": "We/Sam",
-    "frequency": 3
-  },
-  {
-    "purpose": "We/Wr",
-    "frequency": 3
-  },
-  {
-    "purpose": "Wr/F/Sa",
-    "frequency": 2
-  },
-  {
-    "purpose": "Wr/Fms",
-    "frequency": 6
-  },
-  {
-    "purpose": "Fms/Wr",
-    "frequency": 2
-  },
-  {
-    "purpose": "Wr/P/S",
-    "frequency": 1
-  },
-  {
-    "purpose": "Wr/F/S",
-    "frequency": 1
-  },
-  {
-    "purpose": "Wr/We/S",
-    "frequency": 1
+    "frequency": 189,
+    "explanation": "Peaceful nuclear explosion"
   }
 ]

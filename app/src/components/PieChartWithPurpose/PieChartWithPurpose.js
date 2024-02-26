@@ -30,6 +30,7 @@ export default function PieChartWithPurpose() {
   const transformedData = pair.map((item, index) => ({
     x: item.purpose,
     y: item.frequency,
+    z: item.explanation,
   }));
 
   return (
