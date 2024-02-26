@@ -1,6 +1,7 @@
 import React from "react";
 import { VictoryLabel, VictoryPie, VictoryTooltip } from "victory";
 import pair from "./data/purpose_frequency_pair.json";
+import { Grid } from "@mui/material";
 
 class CustomLabel extends React.Component {
   render() {
@@ -34,6 +35,7 @@ export default function PieChartWithPurpose() {
   }));
 
   return (
+    // <Grid container xs={6}>
     <VictoryPie
       style={{ labels: { fill: "white" } }}
       innerRadius={80}
@@ -42,5 +44,6 @@ export default function PieChartWithPurpose() {
       labelComponent={<CustomLabel />}
       data={transformedData}
     />
+    // </Grid>
   );
 }

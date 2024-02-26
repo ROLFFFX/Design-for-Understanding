@@ -101,23 +101,23 @@ export default function VegaDemo() {
     vegaEmbed("#body-magnitude", specBody, { actions: true });
 
     // Embed the third graph
-    vegaEmbed("#explosion-yield", specUpper, { actions: true });
+    // vegaEmbed("#explosion-yield", specUpper, { actions: true });
   }, []);
   return (
     <div className="root">
       {/* Assuming a 4x4 grid */}
       <Grid container>
-        <Grid item xs={6} sx={customGridStyle}>
+        <Grid item xs={6} sx={customGridStyle} border={1}>
           <div id="surface-magnitude"></div>
         </Grid>
-        <Grid item xs={6} sx={customGridStyle}>
+        <Grid item xs={6} sx={customGridStyle} border={1}>
           <div id="body-magnitude"></div>
         </Grid>
-        <Grid item xs={6} sx={customGridStyle}>
+        <Grid item xs={6} sx={customGridStyle} border={1}>
           {/* <div id="explosion-yield"></div> */}
           <StackedBarChartTestPerYear />
         </Grid>
-        <Grid item xs={6} sx={customGridStyle}>
+        <Grid item xs={6} sx={customGridStyle} border={1}>
           <PieChartWithPurpose />
         </Grid>
       </Grid>
