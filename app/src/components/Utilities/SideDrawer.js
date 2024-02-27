@@ -1,15 +1,12 @@
-import * as React from "react";
 import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+import * as React from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function TemporaryDrawer() {
@@ -35,6 +32,7 @@ export default function TemporaryDrawer() {
               sx={{
                 "& .MuiListItemText0primary": {
                   fontFamily: "Inter, sans-serif",
+                  fontSize: 14,
                 },
               }}
             />
@@ -52,6 +50,25 @@ export default function TemporaryDrawer() {
               sx={{
                 "& .MuiListItemText0primary": {
                   fontFamily: "Inter, sans-serif",
+                  fontSize: 14,
+                },
+              }}
+            />
+          </ListItemButton>
+        </ListItem>
+        {/* Third Item: Button to PieChart */}
+        <ListItem key={"Pie Chart Purpose"} disablePadding>
+          <ListItemButton
+            onClick={() => {
+              navigate("/piechartpurpose");
+            }}
+          >
+            <ListItemText
+              primary={"Pie Chart Purpose"}
+              sx={{
+                "& .MuiListItemText0primary": {
+                  fontFamily: "Inter, sans-serif",
+                  fontSize: 14,
                 },
               }}
             />

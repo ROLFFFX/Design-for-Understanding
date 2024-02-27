@@ -2,9 +2,9 @@ import { Divider, Grid } from "@mui/material";
 import { useEffect } from "react";
 import vegaEmbed from "vega-embed";
 import data from "../nuclear_explosions.json";
-import PieChartWithPurpose from "./PieChartWithPurpose/PieChartWithPurpose";
-import StackedBarChartTestPerYear from "./StackedBarChartTestPerYear/StackedBarChartTestPerYear";
-import TemporaryDrawer from "./Utilities/SideDrawer";
+import PieChartWithPurpose from "../components/PieChartWithPurpose/PieChartWithPurpose";
+import StackedBarChartTestPerYear from "../components/StackedBarChartTestPerYear/StackedBarChartTestPerYear";
+import TemporaryDrawer from "../components/Utilities/SideDrawer";
 
 const customGridStyle = {
   height: "49vh",
