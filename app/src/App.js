@@ -1,9 +1,9 @@
 import React from "react";
-import VegaDemo from "./pages/VegaDemo.js";
-import { Outlet, outlet, Route, Routes } from "react-router-dom";
+import { Outlet, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage.js";
 import PageNotFound from "./pages/PageNotFound.js";
 import PieChartPage from "./pages/PieChartPage.js";
+import VegaDemo from "./pages/VegaDemo.js";
 
 // Awaiting persistent components like nav bars
 function CustomLayout({ children }) {
