@@ -49,8 +49,8 @@ custom_html = f"""
 """
 st.components.v1.html(custom_html, height=820, scrolling=True)
 
-html_file_name = "streamlit_plot.html"  # You can choose any name for the file
-with open(html_file_name, "w") as file:  # Open a file in write mode
-    file.write(custom_html)  # Write the HTML content to the file
+# html_file_name = "streamlit_plot.html"  # You can choose any name for the file
+# with open(html_file_name, "w") as file:  # Open a file in write mode
+#     file.write(custom_html)  # Write the HTML content to the file
 
-print(f"HTML file saved as {html_file_name}")
+# print(f"HTML file saved as {html_file_name}")
