@@ -9,6 +9,13 @@ import ListItemText from "@mui/material/ListItemText";
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
 
+const ListItemTextStyle = {
+  "& .MuiListItemText0primary": {
+    fontFamily: "Inter, sans-serif",
+    fontSize: 6,
+  },
+};
+
 export default function TemporaryDrawer() {
   const [open, setOpen] = React.useState(false);
   const navigate = useNavigate();
@@ -27,15 +34,7 @@ export default function TemporaryDrawer() {
               navigate("/");
             }}
           >
-            <ListItemText
-              primary={"Home Page"}
-              sx={{
-                "& .MuiListItemText0primary": {
-                  fontFamily: "Inter, sans-serif",
-                  fontSize: 14,
-                },
-              }}
-            />
+            <ListItemText primary={"Home Page"} sx={ListItemTextStyle} />
           </ListItemButton>
         </ListItem>
         {/* Second Item: Button to VegaDemo */}
@@ -45,15 +44,7 @@ export default function TemporaryDrawer() {
               navigate("/vegademo");
             }}
           >
-            <ListItemText
-              primary={"Vega Demo"}
-              sx={{
-                "& .MuiListItemText0primary": {
-                  fontFamily: "Inter, sans-serif",
-                  fontSize: 14,
-                },
-              }}
-            />
+            <ListItemText primary={"Vega Demo"} sx={ListItemTextStyle} />
           </ListItemButton>
         </ListItem>
         {/* Third Item: Button to PieChart */}
@@ -65,12 +56,20 @@ export default function TemporaryDrawer() {
           >
             <ListItemText
               primary={"Pie Chart Purpose"}
-              sx={{
-                "& .MuiListItemText0primary": {
-                  fontFamily: "Inter, sans-serif",
-                  fontSize: 14,
-                },
-              }}
+              sx={ListItemTextStyle}
+            />
+          </ListItemButton>
+        </ListItem>
+        {/* Fourth Item: Stacked Bar Chart */}
+        <ListItem key={"Pie Chart Purpose"} disablePadding>
+          <ListItemButton
+            onClick={() => {
+              navigate("/stackedbarchart");
+            }}
+          >
+            <ListItemText
+              primary={"Stacked Bar Chart"}
+              sx={ListItemTextStyle}
             />
           </ListItemButton>
         </ListItem>
