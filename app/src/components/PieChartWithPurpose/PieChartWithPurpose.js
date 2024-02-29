@@ -9,6 +9,7 @@ import { VictoryLabel, VictoryPie, VictoryTooltip } from "victory";
 import HomeButton from "../Utilities/HomeButton";
 import ungroupedPair from "./data/p_f_pair_pregrouping.json";
 import pair from "./data/purpose_frequency_pair.json";
+import TemporaryDrawer from "../Utilities/SideDrawer";
 
 const textFieldStyle = {
   width: "80%",
@@ -93,7 +94,8 @@ export default function PieChartWithPurpose() {
 
   return (
     <>
-      <HomeButton />
+      <TemporaryDrawer />
+      {/* <HomeButton /> */}
       <Grid container>
         <Grid item xs={12}>
           <Box sx={{ textAlign: "center", mt: -4 }}>
