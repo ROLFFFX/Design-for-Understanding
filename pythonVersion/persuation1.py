@@ -4,6 +4,7 @@ import plotly.express as px
 
 # Set page config
 st.set_page_config(layout="wide")
+st.link_button("Go back", "https://nucexpo.vercel.app/")
 @st.cache_data()
 def load_data():
     df = pd.read_csv('nuclear_explosions.csv')
