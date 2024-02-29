@@ -1,0 +1,55 @@
+[
+  {
+    "purpose": "Wr",
+    "frequency": 1528,
+    "explanation": "Weapons development program"
+  },
+  {
+    "purpose": "Combat",
+    "frequency": 2,
+    "explanation": "WWII bombs dropped over Japan"
+  },
+  {
+    "purpose": "We",
+    "frequency": 187,
+    "explanation": "British, French, US, evaluate effects of nuclear detonation on various targets"
+  },
+  {
+    "purpose": "Me",
+    "frequency": 1,
+    "explanation": "Military Exercise"
+  },
+  {
+    "purpose": "Se",
+    "frequency": 73,
+    "explanation": "French/US tests - testing safety of nuclear weapons in case of accident"
+  },
+  {
+    "purpose": "Fms",
+    "frequency": 35,
+    "explanation": "Soviet test, study phenomenon of nuclear explosion"
+  },
+  {
+    "purpose": "Sb",
+    "frequency": 5
+  },
+  {
+    "purpose": "Sam",
+    "frequency": 25,
+    "explanation": "Soviet test, accidental mode/emergency"
+  },
+  {
+    "purpose": "Transp",
+    "frequency": 4,
+    "explanation": "Transportation-storage purposes"
+  },
+  {
+    "purpose": "Nan",
+    "frequency": 1
+  },
+  {
+    "purpose": "Pne",
+    "frequency": 189,
+    "explanation": "Peaceful nuclear explosion"
+  }
+]

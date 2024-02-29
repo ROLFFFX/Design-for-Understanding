@@ -1,0 +1,142 @@
+[
+  {
+    "purpose": "Wr",
+    "frequency": 1490,
+    "explanation": "Weapons development program"
+  },
+  {
+    "purpose": "Combat",
+    "frequency": 2,
+    "explanation": "WWII bombs dropped over Japan"
+  },
+  {
+    "purpose": "We",
+    "frequency": 181,
+    "explanation": "British, French, US, evaluate effects of nuclear detonation on various targets"
+  },
+  {
+    "purpose": "Me",
+    "frequency": 1,
+    "explanation": "Military Exercise"
+  },
+  {
+    "purpose": "Se",
+    "frequency": 71,
+    "explanation": "French/US tests - testing safety of nuclear weapons in case of accident"
+  },
+  {
+    "purpose": "Fms",
+    "frequency": 33,
+    "explanation": "Soviet test, study phenomenon of nuclear explosion"
+  },
+  {
+    "purpose": "Sb",
+    "frequency": 5,
+    "explanation": "Unknown purpose, possibly a specific test designation"
+  },
+  {
+    "purpose": "Sam",
+    "frequency": 25,
+    "explanation": "Soviet test, accidental mode/emergency"
+  },
+  {
+    "purpose": "Pne:Plo",
+    "frequency": 27,
+    "explanation": "Possible peaceful nuclear explosion with a political objective"
+  },
+  {
+    "purpose": "Transp",
+    "frequency": 4,
+    "explanation": "Transportation-storage purposes"
+  },
+  {
+    "purpose": "Pne:V",
+    "frequency": 7,
+    "explanation": "Possible peaceful nuclear explosion for research or experimental purposes"
+  },
+  {
+    "purpose": "Nan",
+    "frequency": 1,
+    "explanation": "Purpose unknown, possibly a specific test designation"
+  },
+  {
+    "purpose": "Pne",
+    "frequency": 153,
+    "explanation": "Peaceful nuclear explosion"
+  },
+  {
+    "purpose": "Wr/Se",
+    "frequency": 11,
+    "explanation": "Possibly a joint weapons development and safety testing program"
+  },
+  {
+    "purpose": "Wr/We",
+    "frequency": 2,
+    "explanation": "Possibly a joint weapons development and evaluation program"
+  },
+  {
+    "purpose": "Wr/Pne",
+    "frequency": 3,
+    "explanation": "Possibly a joint weapons development and peaceful nuclear explosion program"
+  },
+  {
+    "purpose": "Wr/Sam",
+    "frequency": 6,
+    "explanation": "Possibly a joint weapons development and accidental/emergency testing program"
+  },
+  {
+    "purpose": "Pne/Wr",
+    "frequency": 2,
+    "explanation": "Possibly a joint peaceful nuclear explosion and weapons development program"
+  },
+  {
+    "purpose": "Se/Wr",
+    "frequency": 2,
+    "explanation": "Possibly a joint safety testing and weapons development program"
+  },
+  {
+    "purpose": "Wr/P/Sa",
+    "frequency": 1,
+    "explanation": "Unclear purpose, possibly a joint program involving weapons development, peaceful nuclear explosion, and safety testing"
+  },
+  {
+    "purpose": "We/Sam",
+    "frequency": 3,
+    "explanation": "Possibly a joint evaluation of nuclear detonation effects and accidental/emergency testing program"
+  },
+  {
+    "purpose": "We/Wr",
+    "frequency": 3,
+    "explanation": "Possibly a joint evaluation of nuclear detonation effects and weapons development program"
+  },
+  {
+    "purpose": "Wr/F/Sa",
+    "frequency": 2,
+    "explanation": "Unclear purpose, possibly a joint program involving weapons development, study of nuclear explosion phenomenon, and safety testing"
+  },
+  {
+    "purpose": "Wr/Fms",
+    "frequency": 6,
+    "explanation": "Possibly a joint program involving weapons development and study of nuclear explosion phenomenon"
+  },
+  {
+    "purpose": "Fms/Wr",
+    "frequency": 2,
+    "explanation": "Possibly a joint program involving study of nuclear explosion phenomenon and weapons development"
+  },
+  {
+    "purpose": "Wr/P/S",
+    "frequency": 1,
+    "explanation": "Unclear purpose, possibly a joint program involving weapons development, peaceful nuclear explosion, and safety testing"
+  },
+  {
+    "purpose": "Wr/F/S",
+    "frequency": 1,
+    "explanation": "Unclear purpose, possibly a joint program involving weapons development, study of nuclear explosion phenomenon, and safety testing"
+  },
+  {
+    "purpose": "Wr/We/S",
+    "frequency": 1,
+    "explanation": "Possibly a joint program involving weapons development, evaluation, and safety testing"
+  }
+]
