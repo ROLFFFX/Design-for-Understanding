@@ -542,6 +542,7 @@ const StackedBarChartTestPerYear = () => {
     <div>
       <TemporaryDrawer />
       <Grid container border={1}>
+        {/* Header */}
         <Grid item xs={12}>
           <Box sx={{ textAlign: "center", mt: -4 }}>
             <Typography
@@ -551,6 +552,7 @@ const StackedBarChartTestPerYear = () => {
             </Typography>
           </Box>
         </Grid>
+        {/* Actual Graph */}
         <Grid item xs={12}>
           <LineChart
             xAxis={[

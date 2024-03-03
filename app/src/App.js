@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet, Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage.js";
+import HomePage from "./pages/HomePage/HomePage.js";
 import PageNotFound from "./pages/PageNotFound.js";
 import PieChartPage from "./pages/PieChartPage.js";
 import VegaDemo from "./pages/VegaDemo.js";
