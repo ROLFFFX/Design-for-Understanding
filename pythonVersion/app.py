@@ -23,6 +23,7 @@ st.sidebar.link_button("Go back", "https://nucexpo.vercel.app/")
 
 # Navigation
 page = st.sidebar.radio("Navigate to", ["Nuclear Explosions Map", "Yield Over Time", "Interactive TNT Graph"])
+empty = ""
 
 if page == "Nuclear Explosions Map":
     df['year'] = df['year'].astype(int)
@@ -83,6 +84,7 @@ elif page == "Yield Over Time":
     plt.tight_layout()
     fig_html = mpld3.fig_to_html(fig)
     variable = "yield over time"
+
     st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{variable}</div>", unsafe_allow_html=True)
     custom_html = f"""<div style="overflow-x: auto; overflow-y: auto; width:100%; height:100vh;">{fig_html}</div>"""
     st.components.v1.html(custom_html, height=820, scrolling=True)
@@ -116,16 +118,16 @@ elif page == "Interactive TNT Graph":
     country, date, kiloton = find_matching_yield(number_of_tnts)
     tooltip_text = f"Country: {country}, Date: {date}, Kilotons of TNT: {kiloton}" if country and date else "No match found"
     st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{tooltip_text}</div>", unsafe_allow_html=True)
-    st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{""}</div>", unsafe_allow_html=True)
-    st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{""}</div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{empty}</div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{empty}</div>", unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns([1.85, 5, 1])
     
     with col1:
-        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{""}</div>", unsafe_allow_html=True)
-        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{""}</div>", unsafe_allow_html=True)
-        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{""}</div>", unsafe_allow_html=True)
-        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{""}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{empty}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{empty}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{empty}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{empty}</div>", unsafe_allow_html=True)
         
         if st.button("←"):
             decrement_index()
@@ -143,10 +145,10 @@ elif page == "Interactive TNT Graph":
 
 
     with col3:
-        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{""}</div>", unsafe_allow_html=True)
-        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{""}</div>", unsafe_allow_html=True)
-        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{""}</div>", unsafe_allow_html=True)
-        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{""}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{empty}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{empty}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{empty}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{empty}</div>", unsafe_allow_html=True)
         if st.button("→"):
             increment_index()
 
