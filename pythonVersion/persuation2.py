@@ -41,6 +41,9 @@ plt.gca().xaxis.set_major_locator(MaxNLocator(prune='both', nbins=20))
 # debug
 # plt.colorbar(scatter, ax=ax, orientation='vertical', label='Country')
 plt.tight_layout()
+variable = "yield over time"
+
+st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{variable}</div>", unsafe_allow_html=True)
 fig_html = mpld3.fig_to_html(fig)
 custom_html = f"""
 <div style="overflow-x: auto; overflow-y: auto; width:100%; height:100vh;">
