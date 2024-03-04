@@ -8,6 +8,4 @@ RUN pip install --no-cache-dir streamlit pandas plotly matplotlib mpld3
 
 EXPOSE 8501
 
-ENV NAME World
-
-CMD ["streamlit", "run", "app.py"]
+CMD streamlit run app.py --server.port=$PORT

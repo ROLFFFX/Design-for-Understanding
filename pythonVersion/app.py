@@ -82,7 +82,8 @@ elif page == "Yield Over Time":
     plt.gca().xaxis.set_major_locator(MaxNLocator(prune='both', nbins=20))
     plt.tight_layout()
     fig_html = mpld3.fig_to_html(fig)
-    st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{"yield over time"}</div>", unsafe_allow_html=True)
+    variable = "yield over time"
+    st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{variable}</div>", unsafe_allow_html=True)
     custom_html = f"""<div style="overflow-x: auto; overflow-y: auto; width:100%; height:100vh;">{fig_html}</div>"""
     st.components.v1.html(custom_html, height=820, scrolling=True)
 
