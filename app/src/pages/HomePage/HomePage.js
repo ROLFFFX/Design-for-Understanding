@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TemporaryDrawer from "../../components/Utilities/SideDrawer";
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./HomePage.css";
 
@@ -20,7 +20,8 @@ export default function HomePage() {
   const [isHovering4, setIsHovering4] = useState(false);
   const [isHovering3, setIsHovering3] = useState(false);
   const [isHovering2, setIsHovering2] = useState(false);
-  const [isHovering1, setIsHovering1] = useState(false);
+  // const [isHovering1, setIsHovering1] = useState(false);
+  const [unglitch, setUnglitch] = useState(false);
   return (
     <div style={backgroundStyles} className="movingBackground">
       <Box p={2}>
@@ -75,13 +76,13 @@ export default function HomePage() {
                 fill="#80f155"
                 className="green"
                 onMouseEnter={() => {
-                  setIsHovering1(true);
+                  setUnglitch(true);
                 }}
                 onMouseLeave={() => {
-                  setIsHovering1(false);
+                  setUnglitch(false);
                 }}
                 onClick={() => {
-                  navigate("https://google.com");
+                  window.location.href = "http://3.135.199.12";
                 }}
               />
               {/* Black Segment */}
@@ -97,7 +98,7 @@ export default function HomePage() {
                   setIsHovering2(false);
                 }}
                 onClick={() => {
-                  navigate("https://google.com");
+                  window.location.href = "http://18.217.139.7";
                 }}
               />
               {/* Green Segment */}
@@ -113,7 +114,7 @@ export default function HomePage() {
                   setIsHovering3(false);
                 }}
                 onClick={() => {
-                  navigate("https://google.com");
+                  window.location.href = "http://18.224.71.121/";
                 }}
               />
               {/* Black Segment */}
@@ -253,9 +254,11 @@ export default function HomePage() {
           }}
         >
           <Typography sx={{ fontFamily: "PT Mono" }}>
-            <span style={{ fontWeight: "bolder" }}>Nuclear Explosion</span>{" "}
+            <span style={{ fontWeight: "bolder" }}>
+              Geospatial Multi-View Graph
+            </span>{" "}
             <span style={{ fontWeight: "lighter", color: "grey" }}>
-              (Multi-View Persuasive)
+              (Persuasive)
               <br />
               Click to View
             </span>
@@ -285,26 +288,30 @@ export default function HomePage() {
         </div>
       )}
       {/* Persuasive 1 */}
-      {isHovering1 && (
-        <div
-          style={{
-            position: "absolute",
-            display: "flex",
-            top: "33%",
-            width: "90%",
-            justifyContent: "right",
-            textAlign: "center",
-          }}
-        >
-          <Typography sx={{ fontFamily: "PT Mono" }}>
-            <span style={{ fontWeight: "bolder" }}>Persuasive 1</span>{" "}
-            <span style={{ fontWeight: "lighter", color: "grey" }}>
-              (Multi-View Persuasive)
-              <br />
-              Click to View
-            </span>
-          </Typography>
-        </div>
+      {unglitch && (
+        <Grid container>
+          <Grid item xs={8}></Grid>
+          <Grid item xs={4} textAlign="center">
+            <Box
+              style={{
+                position: "absolute",
+                display: "flex",
+                justifyContent: "left",
+                top: "33%",
+                width: "100%",
+              }}
+            >
+              <Typography sx={{ fontFamily: "PT Mono" }}>
+                <span style={{ fontWeight: "bolder" }}>Persuasive 1</span>{" "}
+                <span style={{ fontWeight: "lighter", color: "grey" }}>
+                  (Multi-View Persuasive)
+                  <br />
+                  Click to View
+                </span>
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
       )}
     </div>
   );
