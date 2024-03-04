@@ -18,6 +18,9 @@ export default function HomePage() {
   const [isHovering6, setIsHovering6] = useState(false);
   const [isHovering5, setIsHovering5] = useState(false);
   const [isHovering4, setIsHovering4] = useState(false);
+  const [isHovering3, setIsHovering3] = useState(false);
+  const [isHovering2, setIsHovering2] = useState(false);
+  const [isHovering1, setIsHovering1] = useState(false);
   return (
     <div style={backgroundStyles} className="movingBackground">
       <Box p={2}>
@@ -67,21 +70,51 @@ export default function HomePage() {
               <circle cx="0" cy="0" r="215" fill="black" />
               {/* Green Segment */}
               <path
+                id={1}
                 d="M0,-200A200,200 0 0,1 173.2,-100L0,0Z"
                 fill="#80f155"
                 className="green"
+                onMouseEnter={() => {
+                  setIsHovering1(true);
+                }}
+                onMouseLeave={() => {
+                  setIsHovering1(false);
+                }}
+                onClick={() => {
+                  navigate("https://google.com");
+                }}
               />
               {/* Black Segment */}
               <path
+                id={2}
                 d="M173.2,-100A200,200 0 0,1 173.2,100L0,0Z"
                 fill="black"
                 className="black"
+                onMouseEnter={() => {
+                  setIsHovering2(true);
+                }}
+                onMouseLeave={() => {
+                  setIsHovering2(false);
+                }}
+                onClick={() => {
+                  navigate("https://google.com");
+                }}
               />
               {/* Green Segment */}
               <path
+                id={3}
                 d="M173.2,100A200,200 0 0,1 0,200L0,0Z"
                 fill="#80f155"
                 className="green"
+                onMouseEnter={() => {
+                  setIsHovering3(true);
+                }}
+                onMouseLeave={() => {
+                  setIsHovering3(false);
+                }}
+                onClick={() => {
+                  navigate("https://google.com");
+                }}
               />
               {/* Black Segment */}
               <path
@@ -159,7 +192,6 @@ export default function HomePage() {
           </Typography>
         </div>
       )}
-
       {/* Analysis: Stacked Bar Chart */}
       {isHovering5 && (
         <div
@@ -202,6 +234,72 @@ export default function HomePage() {
             </span>{" "}
             <span style={{ fontWeight: "lighter", color: "grey" }}>
               (Histogram)
+              <br />
+              Click to View
+            </span>
+          </Typography>
+        </div>
+      )}
+      {/* Persuasive 1 */}
+      {isHovering3 && (
+        <div
+          style={{
+            position: "absolute",
+            display: "flex",
+            top: "80%",
+            width: "65%",
+            justifyContent: "right",
+            textAlign: "center",
+          }}
+        >
+          <Typography sx={{ fontFamily: "PT Mono" }}>
+            <span style={{ fontWeight: "bolder" }}>Nuclear Explosion</span>{" "}
+            <span style={{ fontWeight: "lighter", color: "grey" }}>
+              (Multi-View Persuasive)
+              <br />
+              Click to View
+            </span>
+          </Typography>
+        </div>
+      )}
+      {/* Persuasive 2 */}
+      {isHovering2 && (
+        <div
+          style={{
+            position: "absolute",
+            display: "flex",
+            top: "65%",
+            width: "90%",
+            justifyContent: "right",
+            textAlign: "center",
+          }}
+        >
+          <Typography sx={{ fontFamily: "PT Mono" }}>
+            <span style={{ fontWeight: "bolder" }}>Persuasive 2</span>{" "}
+            <span style={{ fontWeight: "lighter", color: "grey" }}>
+              (Multi-View Persuasive)
+              <br />
+              Click to View
+            </span>
+          </Typography>
+        </div>
+      )}
+      {/* Persuasive 1 */}
+      {isHovering1 && (
+        <div
+          style={{
+            position: "absolute",
+            display: "flex",
+            top: "33%",
+            width: "90%",
+            justifyContent: "right",
+            textAlign: "center",
+          }}
+        >
+          <Typography sx={{ fontFamily: "PT Mono" }}>
+            <span style={{ fontWeight: "bolder" }}>Persuasive 1</span>{" "}
+            <span style={{ fontWeight: "lighter", color: "grey" }}>
+              (Multi-View Persuasive)
               <br />
               Click to View
             </span>
