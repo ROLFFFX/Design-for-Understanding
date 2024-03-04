@@ -10,9 +10,9 @@ import * as React from "react";
 import { useNavigate } from "react-router-dom";
 
 const ListItemTextStyle = {
-  "& .MuiListItemText0primary": {
+  "& .MuiListItemText-primary": {
     fontFamily: "PT Mono",
-    fontSize: 6,
+    fontSize: 15,
   },
 };
 
@@ -37,7 +37,7 @@ export default function TemporaryDrawer() {
             <ListItemText primary={"Home Page"} sx={ListItemTextStyle} />
           </ListItemButton>
         </ListItem>
-        {/* Second Item: Button to VegaDemo */}
+        {/* Second Item: Button to VegaDemo
         <ListItem key={"Home Page"} disablePadding>
           <ListItemButton
             onClick={() => {
@@ -46,7 +46,7 @@ export default function TemporaryDrawer() {
           >
             <ListItemText primary={"Vega Demo"} sx={ListItemTextStyle} />
           </ListItemButton>
-        </ListItem>
+        </ListItem> */}
         {/* Third Item: Button to PieChart */}
         <ListItem key={"Pie Chart Purpose"} disablePadding>
           <ListItemButton
@@ -55,7 +55,7 @@ export default function TemporaryDrawer() {
             }}
           >
             <ListItemText
-              primary={"Pie Chart Purpose"}
+              primary={"Purpose & Frequency"}
               sx={ListItemTextStyle}
             />
           </ListItemButton>
@@ -68,7 +68,7 @@ export default function TemporaryDrawer() {
             }}
           >
             <ListItemText
-              primary={"Stacked Bar Chart"}
+              primary={"Deployments Per Country"}
               sx={ListItemTextStyle}
             />
           </ListItemButton>

@@ -129,9 +129,12 @@ export default function HomePage() {
           }}
         >
           <Typography sx={{ fontFamily: "PT Mono" }}>
-            Purpose & Frequency (Pie Chart)
-            <br />
-            Click to View
+            <span style={{ fontWeight: "bolder" }}>Purpose & Frequency</span>{" "}
+            <span style={{ fontWeight: "lighter", color: "grey" }}>
+              (Pie Chart)
+              <br />
+              Click to View
+            </span>
           </Typography>
         </div>
       )}
@@ -149,9 +152,14 @@ export default function HomePage() {
           }}
         >
           <Typography sx={{ fontFamily: "PT Mono" }}>
-            Tests per Country Over Time (Stacked Bar Chart)
-            <br />
-            Click to View
+            <span style={{ fontWeight: "bolder" }}>
+              Tests per Country Over Time
+            </span>{" "}
+            <span style={{ fontWeight: "lighter", color: "grey" }}>
+              (Stacked Bar Chart)
+              <br />
+              Click to View
+            </span>
           </Typography>
         </div>
       )}
