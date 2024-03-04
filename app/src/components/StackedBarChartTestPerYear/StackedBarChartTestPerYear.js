@@ -531,22 +531,28 @@ const stackStrategy = {
 };
 
 const customize = {
-  height: 300,
+  height: 700,
   legend: { hidden: true },
-  margin: { top: 5 },
+  margin: { top: 100 },
   stackingOrder: "descending",
 };
 
 const StackedBarChartTestPerYear = () => {
   return (
     <div>
-      <TemporaryDrawer />
-      <Grid container border={1}>
+      <Box p={2}>
+        <TemporaryDrawer />
+      </Box>
+      <Grid container>
         {/* Header */}
         <Grid item xs={12}>
-          <Box sx={{ textAlign: "center", mt: -4 }}>
+          <Box sx={{ textAlign: "center", mt: -7 }}>
             <Typography
-              sx={{ fontFamily: "Inter", fontSize: "24px", fontWeight: "bold" }}
+              sx={{
+                fontFamily: "PT Mono",
+                fontSize: "24px",
+                fontWeight: "bold",
+              }}
             >
               Number of Tests Per Country Over Time
             </Typography>
