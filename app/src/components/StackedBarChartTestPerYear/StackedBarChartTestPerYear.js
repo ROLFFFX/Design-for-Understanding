@@ -3,6 +3,16 @@ import React from "react";
 import TemporaryDrawer from "../Utilities/SideDrawer";
 import { LineChart } from "@mui/x-charts/LineChart";
 import processed_nuclear_explosion_data from "./data/processed_nuclear_explosion_data.json";
+import "../../pages/HomePage/HomePage.css";
+
+const backgroundStyles = {
+  backgroundImage:
+    "radial-gradient(circle, rgb(100, 100, 100), rgb(215, 215, 215) 1px, rgb(255, 255, 255) 1px, rgb(255, 255, 255))",
+  backgroundSize: "28px 28px",
+  minHeight: "100vh",
+  marginTop: "-80px",
+  paddingTop: "80px",
+};
 
 const keyToLabel = {
   INDIA: "Republic of India",
@@ -44,7 +54,7 @@ const customize = {
 
 const StackedBarChartTestPerYear = () => {
   return (
-    <div>
+    <div style={backgroundStyles} className="movingBackground">
       <Box p={2}>
         <TemporaryDrawer />
       </Box>

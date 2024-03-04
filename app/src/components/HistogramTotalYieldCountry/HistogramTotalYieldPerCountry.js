@@ -2,6 +2,16 @@ import React, { useEffect, useState } from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import TemporaryDrawer from "../Utilities/SideDrawer";
 import { BarChart } from "@mui/x-charts/BarChart";
+import "../../pages/HomePage/HomePage.css";
+
+const backgroundStyles = {
+  backgroundImage:
+    "radial-gradient(circle, rgb(100, 100, 100), rgb(215, 215, 215) 1px, rgb(255, 255, 255) 1px, rgb(255, 255, 255))",
+  backgroundSize: "28px 28px",
+  minHeight: "100vh",
+  marginTop: "-80px",
+  paddingTop: "80px",
+};
 
 export default function HistogramTotalYieldPerCountry() {
   const [screenSize, setScreenSize] = useState({
@@ -21,7 +31,7 @@ export default function HistogramTotalYieldPerCountry() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
-    <React.Fragment>
+    <div style={backgroundStyles} className="movingBackground">
       <Box p={2}>
         <TemporaryDrawer />
       </Box>
@@ -68,6 +78,8 @@ export default function HistogramTotalYieldPerCountry() {
               marginLeft={70}
               marginRight={20}
               marginTop={20}
+              bgcolor={"#FFFFFF"}
+              p={5}
             >
               <Typography fontFamily={"PT Mono"}>
                 This interactive histogram graph displays the aggregate yield of
@@ -131,6 +143,6 @@ export default function HistogramTotalYieldPerCountry() {
           <Grid item xs={1}></Grid>
         </Grid>
       </Grid>
-    </React.Fragment>
+    </div>
   );
 }
