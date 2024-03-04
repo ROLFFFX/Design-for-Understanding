@@ -5,6 +5,7 @@ import PageNotFound from "./pages/PageNotFound.js";
 import PieChartPage from "./pages/PieChartPage.js";
 import VegaDemo from "./pages/VegaDemo.js";
 import StackedBarChartPage from "./pages/StackedBarChartPage.js";
+import Histogrampage from "./pages/Histogrampage.js";
 
 // Awaiting persistent components like nav bars
 function CustomLayout({ children }) {
@@ -23,10 +24,8 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/vegademo" element={<VegaDemo />} />
           <Route path="/piechartpurpose" element={<PieChartPage />} />
-          <Route
-            path="/stackedbarchart"
-            element={<StackedBarChartPage />}
-          ></Route>
+          <Route path="/stackedbarchart" element={<StackedBarChartPage />} />
+          <Route path="/histogramyield" element={<Histogrampage />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>

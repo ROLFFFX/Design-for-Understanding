@@ -47,7 +47,7 @@ export default function TemporaryDrawer() {
             <ListItemText primary={"Vega Demo"} sx={ListItemTextStyle} />
           </ListItemButton>
         </ListItem> */}
-        {/* Third Item: Button to PieChart */}
+        {/* Second Item: Button to PieChart */}
         <ListItem key={"Pie Chart Purpose"} disablePadding>
           <ListItemButton
             onClick={() => {
@@ -60,8 +60,8 @@ export default function TemporaryDrawer() {
             />
           </ListItemButton>
         </ListItem>
-        {/* Fourth Item: Stacked Bar Chart */}
-        <ListItem key={"Pie Chart Purpose"} disablePadding>
+        {/* Third Item: Stacked Bar Chart */}
+        <ListItem key={"Stacked Bar Chart"} disablePadding>
           <ListItemButton
             onClick={() => {
               navigate("/stackedbarchart");
@@ -69,6 +69,19 @@ export default function TemporaryDrawer() {
           >
             <ListItemText
               primary={"Deployments Per Country"}
+              sx={ListItemTextStyle}
+            />
+          </ListItemButton>
+        </ListItem>
+        {/* Forth Item: histogram, total yields / country */}
+        <ListItem key={"Histogram Yield"} disablePadding>
+          <ListItemButton
+            onClick={() => {
+              navigate("/histogramyield");
+            }}
+          >
+            <ListItemText
+              primary={"Total Yield Per Country"}
               sx={ListItemTextStyle}
             />
           </ListItemButton>
