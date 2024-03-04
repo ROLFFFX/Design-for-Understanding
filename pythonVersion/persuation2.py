@@ -21,7 +21,7 @@ country_to_num = {country: i for i, country in enumerate(unique_countries)}
 grouped_data['country_num'] = grouped_data['country'].map(country_to_num)
 
 unique_dates = len(grouped_data['month_year'].unique())
-fig_width = max(10, unique_dates * 1.5)
+fig_width = max(10, unique_dates*0.8)
 
 fig_height = max(800, len(unique_countries) * 60)
 fig, ax = plt.subplots(figsize=(fig_width, fig_height/100))
@@ -34,20 +34,24 @@ tooltip_labels = [
 plugins.connect(fig, plugins.PointLabelTooltip(scatter, labels=tooltip_labels))
 ax.set_ylim(-2, len(unique_countries))
 
-plt.yticks(range(len(unique_countries)), unique_countries)
-plt.xticks(rotation=90)
 
+# plt.yticks(range(len(unique_countries)), unique_countries)
+# plt.xticks(rotation=90)
+plt.ylabel("Countries")
 plt.gca().xaxis.set_major_locator(MaxNLocator(prune='both', nbins=20))
 # debug
 # plt.colorbar(scatter, ax=ax, orientation='vertical', label='Country')
 plt.tight_layout()
+variable = "yield over time"
+
+st.markdown(f"<div style='text-align: center; font-size: 24px; color: black;'>{variable}</div>", unsafe_allow_html=True)
 fig_html = mpld3.fig_to_html(fig)
 custom_html = f"""
 <div style="overflow-x: auto; overflow-y: auto; width:100%; height:100vh;">
     {fig_html}
 </div>
 """
-st.components.v1.html(custom_html, height=820, scrolling=True)
+st.components.v1.html(custom_html, height=820, scrolling=False)
 
 # html_file_name = "persuation2.html"  # You can choose any name for the file
 # with open(html_file_name, "w") as file:  # Open a file in write mode

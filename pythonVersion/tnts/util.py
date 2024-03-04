@@ -1,5 +1,4 @@
 from PIL import Image
-import math
 
 def create_composite_tnt(number_of_tnts, output_size=(1600, 1280), tnt_path='C:/Users/cy295/Desktop/school 7/cs 485/ds2/Design-for-Understanding/pythonVersion/tnts/TNT.png'):
     tnt_image = Image.open(tnt_path)

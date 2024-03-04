@@ -31,7 +31,7 @@ if page == "Nuclear Explosions Map":
 
     selected_year = st.slider('Select a year', min_year, max_year, min_year)
     # Check if the selected year is either 1979 or 1983
-    if selected_year in [1979, 1983]:
+    if selected_year in [1962, 1979, 1983]:
         # Display an empty world map
         fig = px.scatter_geo(projection="equirectangular")
         fig.update_geos(landcolor="rgb(243, 243, 243)", countrycolor="rgb(204, 204, 204)")
