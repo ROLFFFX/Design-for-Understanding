@@ -37,17 +37,6 @@ export default function TemporaryDrawer() {
             <ListItemText primary={"Home Page"} sx={ListItemTextStyle} />
           </ListItemButton>
         </ListItem>
-        {/* Second Item: Button to VegaDemo
-        <ListItem key={"Home Page"} disablePadding>
-          <ListItemButton
-            onClick={() => {
-              navigate("/vegademo");
-            }}
-          >
-            <ListItemText primary={"Vega Demo"} sx={ListItemTextStyle} />
-          </ListItemButton>
-        </ListItem> */}
-        {/* Second Item: Button to PieChart */}
         <ListItem key={"Pie Chart Purpose"} disablePadding>
           <ListItemButton
             onClick={() => {
