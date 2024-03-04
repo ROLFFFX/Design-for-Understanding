@@ -86,6 +86,19 @@ export default function TemporaryDrawer() {
             />
           </ListItemButton>
         </ListItem>
+        {/* Fifth: Persuasion one: */}
+        <ListItem key={"Persuasion One"} disablePadding>
+          <ListItemButton
+            onClick={() => {
+              window.location.href = "http://18.224.71.121/";
+            }}
+          >
+            <ListItemText
+              primary={"Geospatial Multi-View"}
+              sx={ListItemTextStyle}
+            />
+          </ListItemButton>
+        </ListItem>
       </List>
       <Divider />
     </Box>
