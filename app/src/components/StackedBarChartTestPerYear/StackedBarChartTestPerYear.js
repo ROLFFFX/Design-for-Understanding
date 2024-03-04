@@ -59,7 +59,7 @@ const StackedBarChartTestPerYear = () => {
                 fontWeight: "bold",
               }}
             >
-              Number of Explosions Per Country Over Time
+              Number of Deployments Per Country Over Time
             </Typography>
           </Box>
         </Grid>

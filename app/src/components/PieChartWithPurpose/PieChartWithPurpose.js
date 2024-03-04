@@ -63,7 +63,7 @@ class CustomLabel extends React.Component {
           cornerRadius={50}
           flyoutWidth={100}
           flyoutHeight={100}
-          flyoutStyle={{ fill: "black" }}
+          flyoutStyle={{ fill: "#37474f", stroke: "#37474f" }}
           text={({ datum }) => `${datum.x}: ${datum.y} (times)`}
         />
       </g>
@@ -119,6 +119,7 @@ export default function PieChartWithPurpose() {
             labels={({ datum }) => ``}
             labelComponent={<CustomLabel />}
             data={transformedData}
+            colorScale="qualitative"
             events={[
               {
                 target: "data",
@@ -208,10 +209,12 @@ Occurrences: ${props.datum.y} times, which accounts for ${percentage}% of all re
                   Grouping of Data
                 </InputLabel>
                 <Select
-                  labelId="demo-simple-select-helper-label"
-                  id="demo-simple-select-helper"
                   value={group}
                   label="Grouped"
+                  sx={{
+                    fontFamily: "PT Mono",
+                    color: "black",
+                  }}
                   onChange={handleChange}
                 >
                   <MenuItem value={"Grouped"} sx={{ fontFamily: "PT Mono" }}>
