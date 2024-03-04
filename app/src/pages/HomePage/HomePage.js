@@ -2,6 +2,16 @@ import React, { useState } from "react";
 import TemporaryDrawer from "../../components/Utilities/SideDrawer";
 import { Box, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import "./HomePage.css";
+
+const backgroundStyles = {
+  backgroundImage:
+    "radial-gradient(circle, rgb(100, 100, 100), rgb(215, 215, 215) 1px, rgb(255, 255, 255) 1px, rgb(255, 255, 255))",
+  backgroundSize: "28px 28px",
+  minHeight: "100vh",
+  marginTop: "-80px",
+  paddingTop: "80px",
+};
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -9,7 +19,7 @@ export default function HomePage() {
   const [isHovering5, setIsHovering5] = useState(false);
   const [isHovering4, setIsHovering4] = useState(false);
   return (
-    <>
+    <div style={backgroundStyles} className="movingBackground">
       <Box p={2}>
         <TemporaryDrawer />
       </Box>
@@ -198,6 +208,6 @@ export default function HomePage() {
           </Typography>
         </div>
       )}
-    </>
+    </div>
   );
 }
