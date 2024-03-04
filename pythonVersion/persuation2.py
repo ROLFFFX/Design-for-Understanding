@@ -21,7 +21,7 @@ country_to_num = {country: i for i, country in enumerate(unique_countries)}
 grouped_data['country_num'] = grouped_data['country'].map(country_to_num)
 
 unique_dates = len(grouped_data['month_year'].unique())
-fig_width = max(10, unique_dates*0.8)
+fig_width = max(10, unique_dates*0.5)
 
 fig_height = max(800, len(unique_countries) * 60)
 fig, ax = plt.subplots(figsize=(fig_width, fig_height/100))

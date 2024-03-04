@@ -15,7 +15,8 @@ def find_matching_yield(tnt_count):
         country = first_match['country']
         date = pd.to_datetime(str(first_match['date_long']), format='%Y%m%d').date()
         kiloton = first_match['yield_upper']
-        return country, date, kiloton
+        name = first_match['name']
+        return country, date, kiloton, name
     # else:
     #     return None, None
 
@@ -35,10 +36,15 @@ def display_tnt_image():
     number_of_tnts = tnt_counts[st.session_state.current_index]
     file_path = f"tnts/tnt{number_of_tnts}.png"
     
-    country, date, kiloton = find_matching_yield(number_of_tnts)
-    tooltip_text = f"Country: {country}, Date: {date}, Kilotons of TNT:{kiloton}" if country and date else "No match found"
+    country, date, kiloton, name = find_matching_yield(number_of_tnts)
+    tooltip_text = f"name:{name}, Country: {country}, Date: {date}, Kilotons of TNT:{kiloton}" if country and date else "No match found"
     
     image_placeholder.image(file_path, use_column_width=True, caption=tooltip_text)
+    
+def display_exp_gif():
+    number_of_tnts = tnt_counts[st.session_state.current_index]
+    file_path = f"tnts/exp{number_of_tnts}.gif"
+    image_placeholder.image(file_path, use_column_width=True)
 
 st.link_button("Go back", "https://nucexpo.vercel.app/")
 
@@ -54,12 +60,14 @@ with col1:
 
 with col2:
     if st.button("Click to Explode!"):
-        explosion_gif_path = 'tnts/exp.gif'
-        image_placeholder.image(explosion_gif_path, use_column_width=True)
+        display_exp_gif
         time.sleep(2)
-        display_tnt_image()
+        #display_tnt_image()
 
 with col3:
     if st.button("→"):
         increment_index()
 display_tnt_image()
+
+#persuation2 rename
+#persuation3 stack gifs
