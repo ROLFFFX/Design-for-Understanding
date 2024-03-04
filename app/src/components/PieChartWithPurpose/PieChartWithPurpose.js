@@ -9,6 +9,16 @@ import { VictoryLabel, VictoryPie, VictoryTooltip } from "victory";
 import TemporaryDrawer from "../Utilities/SideDrawer";
 import ungroupedPair from "./data/p_f_pair_pregrouping.json";
 import pair from "./data/purpose_frequency_pair.json";
+import "../../pages/HomePage/HomePage.css";
+
+const backgroundStyles = {
+  backgroundImage:
+    "radial-gradient(circle, rgb(100, 100, 100), rgb(215, 215, 215) 1px, rgb(255, 255, 255) 1px, rgb(255, 255, 255))",
+  backgroundSize: "28px 28px",
+  minHeight: "100vh",
+  marginTop: "-80px",
+  paddingTop: "80px",
+};
 
 const textFieldStyle = {
   width: "80%",
@@ -63,7 +73,7 @@ class CustomLabel extends React.Component {
           cornerRadius={50}
           flyoutWidth={100}
           flyoutHeight={100}
-          flyoutStyle={{ fill: "black" }}
+          flyoutStyle={{ fill: "#37474f", stroke: "#37474f" }}
           text={({ datum }) => `${datum.x}: ${datum.y} (times)`}
         />
       </g>
@@ -92,7 +102,7 @@ export default function PieChartWithPurpose() {
   };
 
   return (
-    <>
+    <div style={backgroundStyles} className="movingBackground">
       <Box p={2}>
         <TemporaryDrawer />
       </Box>
@@ -119,6 +129,7 @@ export default function PieChartWithPurpose() {
             labels={({ datum }) => ``}
             labelComponent={<CustomLabel />}
             data={transformedData}
+            colorScale="qualitative"
             events={[
               {
                 target: "data",
@@ -176,6 +187,7 @@ Occurrences: ${props.datum.y} times, which accounts for ${percentage}% of all re
                 textAlign: "left",
                 padding: 5,
               }}
+              bgcolor={"white"}
             >
               <Typography sx={{ fontFamily: "PT Mono" }}>
                 This page presents a pie chart illustrating the{" "}
@@ -208,10 +220,12 @@ Occurrences: ${props.datum.y} times, which accounts for ${percentage}% of all re
                   Grouping of Data
                 </InputLabel>
                 <Select
-                  labelId="demo-simple-select-helper-label"
-                  id="demo-simple-select-helper"
                   value={group}
                   label="Grouped"
+                  sx={{
+                    fontFamily: "PT Mono",
+                    color: "black",
+                  }}
                   onChange={handleChange}
                 >
                   <MenuItem value={"Grouped"} sx={{ fontFamily: "PT Mono" }}>
@@ -254,6 +268,6 @@ Occurrences: ${props.datum.y} times, which accounts for ${percentage}% of all re
           </Grid>
         </Grid>
       </Grid>
-    </>
+    </div>
   );
 }
