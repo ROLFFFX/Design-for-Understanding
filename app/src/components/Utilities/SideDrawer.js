@@ -37,17 +37,6 @@ export default function TemporaryDrawer() {
             <ListItemText primary={"Home Page"} sx={ListItemTextStyle} />
           </ListItemButton>
         </ListItem>
-        {/* Second Item: Button to VegaDemo
-        <ListItem key={"Home Page"} disablePadding>
-          <ListItemButton
-            onClick={() => {
-              navigate("/vegademo");
-            }}
-          >
-            <ListItemText primary={"Vega Demo"} sx={ListItemTextStyle} />
-          </ListItemButton>
-        </ListItem> */}
-        {/* Second Item: Button to PieChart */}
         <ListItem key={"Pie Chart Purpose"} disablePadding>
           <ListItemButton
             onClick={() => {
@@ -82,6 +71,19 @@ export default function TemporaryDrawer() {
           >
             <ListItemText
               primary={"Total Yield Per Country"}
+              sx={ListItemTextStyle}
+            />
+          </ListItemButton>
+        </ListItem>
+        {/* Fifth: Persuasion one: */}
+        <ListItem key={"Persuasion One"} disablePadding>
+          <ListItemButton
+            onClick={() => {
+              window.location.href = "http://18.224.71.121/";
+            }}
+          >
+            <ListItemText
+              primary={"Geospatial Multi-View"}
               sx={ListItemTextStyle}
             />
           </ListItemButton>

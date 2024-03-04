@@ -98,7 +98,7 @@ export default function HomePage() {
                   setIsHovering2(false);
                 }}
                 onClick={() => {
-                  window.location.href = "http://18.217.139.7";
+                  navigate("/stackedbarchart");
                 }}
               />
               {/* Green Segment */}
@@ -146,10 +146,11 @@ export default function HomePage() {
                   setIsHovering5(false);
                 }}
                 onClick={() => {
-                  navigate("/stackedbarchart");
+                  window.location.href = "http://18.217.139.7";
                 }}
               />
               {/* Black Segment */}
+              {/* Pie Chart With Purpose / Frequency Pair */}
               <path
                 id={6}
                 d="M-173.2,-100A200,200 0 0,1 0,-200L0,0Z"
@@ -206,11 +207,9 @@ export default function HomePage() {
           }}
         >
           <Typography sx={{ fontFamily: "PT Mono" }}>
-            <span style={{ fontWeight: "bolder" }}>
-              Tests per Country Over Time
-            </span>{" "}
+            <span style={{ fontWeight: "bolder" }}>Persuasive 2</span>{" "}
             <span style={{ fontWeight: "lighter", color: "grey" }}>
-              (Stacked Bar Chart)
+              (Multi-View Persuasive)
               <br />
               Click to View
             </span>
@@ -267,25 +266,33 @@ export default function HomePage() {
       )}
       {/* Persuasive 2 */}
       {isHovering2 && (
-        <div
-          style={{
-            position: "absolute",
-            display: "flex",
-            top: "65%",
-            width: "90%",
-            justifyContent: "right",
-            textAlign: "center",
-          }}
-        >
-          <Typography sx={{ fontFamily: "PT Mono" }}>
-            <span style={{ fontWeight: "bolder" }}>Persuasive 2</span>{" "}
-            <span style={{ fontWeight: "lighter", color: "grey" }}>
-              (Multi-View Persuasive)
-              <br />
-              Click to View
-            </span>
-          </Typography>
-        </div>
+        <Grid container>
+          <Grid item xs={8}></Grid>
+          <Grid item xs={4}>
+            <Box
+              style={{
+                position: "absolute",
+                display: "flex",
+                top: "65%",
+                width: "95%",
+                justifyContent: "left",
+                textAlign: "center",
+              }}
+            >
+              <Typography sx={{ fontFamily: "PT Mono" }}>
+                <span style={{ fontWeight: "bolder" }}>
+                  {" "}
+                  Tests per Country Over Time
+                </span>{" "}
+                <span style={{ fontWeight: "lighter", color: "grey" }}>
+                  (Stacked Bar Chart)
+                  <br />
+                  Click to View
+                </span>
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
       )}
       {/* Persuasive 1 */}
       {unglitch && (
