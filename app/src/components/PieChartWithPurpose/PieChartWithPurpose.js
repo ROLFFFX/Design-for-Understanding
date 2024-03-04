@@ -13,13 +13,13 @@ import pair from "./data/purpose_frequency_pair.json";
 const textFieldStyle = {
   width: "80%",
   "& .Mui-disabled": {
-    fontFamily: "Inter, sans-serif",
+    fontFamily: "PT Mono",
     WebkitTextFillColor: "#212529", // Override text color for webkit browsers
   },
   "& .MuiInputBase-input.Mui-disabled": {
     WebkitTextFillColor: "#212529", // change inner text color
     fontSize: 14,
-    fontFamily: "Inter, sans-serif",
+    fontFamily: "PT Mono",
   },
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
@@ -34,18 +34,18 @@ const textFieldStyle = {
     "& input": {
       color: "#212529", // Style for user input
       fontSize: 15, // Font size for input
-      fontFamily: "Inter, sans-serif", // Font family for input
+      fontFamily: "PT Mono", // Font family for input
     },
     "& textarea": {
       color: "#212529", // Style for textarea (for multiline)
       fontSize: 15, // Font size for textarea
-      fontFamily: "Inter, sans-serif", // Font family for textarea
+      fontFamily: "PT Mono", // Font family for textarea
     },
   },
   "& .MuiInputLabel-root.Mui-focused": {
     color: "#212529",
     fontSize: 15, // Font size for label when input is focused
-    fontFamily: "Inter, sans-serif", // Font family for label when input is focused
+    fontFamily: "PT Mono", // Font family for label when input is focused
   },
 };
 
@@ -93,12 +93,18 @@ export default function PieChartWithPurpose() {
 
   return (
     <>
-      <TemporaryDrawer />
+      <Box p={2}>
+        <TemporaryDrawer />
+      </Box>
       <Grid container>
         <Grid item xs={12}>
           <Box sx={{ textAlign: "center", mt: -4 }}>
             <Typography
-              sx={{ fontFamily: "Inter", fontSize: "24px", fontWeight: "bold" }}
+              sx={{
+                fontFamily: "PT Mono",
+                fontSize: "24px",
+                fontWeight: "bold",
+              }}
             >
               Purpose & Frequency of Nuclear Explosions
             </Typography>
@@ -171,7 +177,7 @@ Occurrences: ${props.datum.y} times, which accounts for ${percentage}% of all re
                 padding: 5,
               }}
             >
-              <Typography>
+              <Typography sx={{ fontFamily: "PT Mono" }}>
                 This page presents a pie chart illustrating the{" "}
                 <span style={{ fontWeight: "bold" }}>
                   distribution of nuclear explosions by purpose and frequency
@@ -190,8 +196,15 @@ Occurrences: ${props.datum.y} times, which accounts for ${percentage}% of all re
               }}
             >
               {/* Selection button & Helper text */}
-              <FormControl variant="standard" size="small">
-                <InputLabel id="demo-simple-select-helper-label">
+              <FormControl
+                variant="standard"
+                size="small"
+                sx={{ fontFamily: "PT Mono" }}
+              >
+                <InputLabel
+                  id="demo-simple-select-helper-label"
+                  sx={{ fontFamily: "PT Mono" }}
+                >
                   Grouping of Data
                 </InputLabel>
                 <Select
@@ -201,10 +214,14 @@ Occurrences: ${props.datum.y} times, which accounts for ${percentage}% of all re
                   label="Grouped"
                   onChange={handleChange}
                 >
-                  <MenuItem value={"Grouped"}>Grouped</MenuItem>
-                  <MenuItem value={"Ungrouped"}>Ungrouped</MenuItem>
+                  <MenuItem value={"Grouped"} sx={{ fontFamily: "PT Mono" }}>
+                    Grouped
+                  </MenuItem>
+                  <MenuItem value={"Ungrouped"} sx={{ fontFamily: "PT Mono" }}>
+                    Ungrouped
+                  </MenuItem>
                 </Select>
-                <FormHelperText>
+                <FormHelperText sx={{ fontFamily: "PT Mono" }}>
                   Data with mixed purpose is grouped by default for better
                   readability. <br /> Select "Ungroup" to display original data.
                 </FormHelperText>

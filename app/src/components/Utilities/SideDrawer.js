@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 
 const ListItemTextStyle = {
   "& .MuiListItemText0primary": {
-    fontFamily: "Inter, sans-serif",
+    fontFamily: "PT Mono",
     fontSize: 6,
   },
 };
@@ -83,7 +83,7 @@ export default function TemporaryDrawer() {
       <Button
         variant={"outlined"}
         color="inherit"
-        sx={{ fontFamily: "Inter" }}
+        sx={{ fontFamily: "PT Mono" }}
         onClick={toggleDrawer(true)}
       >
         Side Bar
