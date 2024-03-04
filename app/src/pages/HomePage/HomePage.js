@@ -7,6 +7,7 @@ export default function HomePage() {
   const navigate = useNavigate();
   const [isHovering6, setIsHovering6] = useState(false);
   const [isHovering5, setIsHovering5] = useState(false);
+  const [isHovering4, setIsHovering4] = useState(false);
   return (
     <>
       <Box p={2}>
@@ -74,9 +75,19 @@ export default function HomePage() {
               />
               {/* Black Segment */}
               <path
+                id={4}
                 d="M0,200A200,200 0 0,1 -173.2,100L0,0Z"
                 fill="black"
                 className="black"
+                onMouseEnter={() => {
+                  setIsHovering4(true);
+                }}
+                onMouseLeave={() => {
+                  setIsHovering4(false);
+                }}
+                onClick={() => {
+                  navigate("/histogramyield");
+                }}
               />
               {/* Green Segment */}
               <path
@@ -157,6 +168,30 @@ export default function HomePage() {
             </span>{" "}
             <span style={{ fontWeight: "lighter", color: "grey" }}>
               (Stacked Bar Chart)
+              <br />
+              Click to View
+            </span>
+          </Typography>
+        </div>
+      )}
+      {/* Histogram */}
+      {isHovering4 && (
+        <div
+          style={{
+            position: "absolute",
+            display: "flex",
+            top: "63%",
+            width: "33%",
+            justifyContent: "right",
+            textAlign: "center",
+          }}
+        >
+          <Typography sx={{ fontFamily: "PT Mono" }}>
+            <span style={{ fontWeight: "bolder" }}>
+              Total Yield Per Country
+            </span>{" "}
+            <span style={{ fontWeight: "lighter", color: "grey" }}>
+              (Histogram)
               <br />
               Click to View
             </span>
