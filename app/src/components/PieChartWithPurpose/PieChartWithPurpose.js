@@ -130,7 +130,7 @@ export default function PieChartWithPurpose() {
             labels={({ datum }) => ``}
             labelComponent={<CustomLabel />}
             data={transformedData}
-            colorScale="qualitative"
+            colorScale={"qualitative"}
             events={[
               {
                 target: "data",
