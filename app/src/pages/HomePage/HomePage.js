@@ -310,7 +310,7 @@ export default function HomePage() {
             >
               <Typography sx={{ fontFamily: "PT Mono" }}>
                 <span style={{ fontWeight: "bolder" }}>
-                  If 20 Kilontons is One Pixel
+                  If 20 Kilotons is One Pixel
                 </span>{" "}
                 <span style={{ fontWeight: "lighter", color: "grey" }}>
                   (Persuasive)
