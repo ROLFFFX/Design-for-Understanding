@@ -92,7 +92,7 @@ export default function HistogramTotalYieldPerCountry() {
               </Typography>
             </Box>
             <BarChart
-              colors={["#0288d1", "#00796b"]}
+              colors={["#440154FF", "#22A884FF"]}
               margin={{ left: 80 }}
               xAxis={[
                 {
