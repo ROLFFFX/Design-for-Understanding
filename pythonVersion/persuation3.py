@@ -79,6 +79,7 @@ with col1:
     image_placeholder = st.empty()
     if st.button("See in Action"):
         display_exp_gif()
+        time.sleep(2)
     display_tnt_image()
 
 with col3:

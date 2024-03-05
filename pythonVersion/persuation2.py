@@ -72,7 +72,7 @@ plt.tight_layout()
 
 fig_html = mpld3.fig_to_html(fig)
 custom_html = f"""
-<div style="overflow-x: auto; overflow-y: auto; width:100%; height:100vh;">
+<div style="overflow-x: auto; overflow-y: auto; width:120%; height:100vh;">
     {fig_html}
 </div>
 """
