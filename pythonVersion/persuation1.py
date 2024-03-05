@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# Adjust CSS to hide the top bar and potentially adjust other styles
 hide_streamlit_style = """
 <style>
     #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 2rem;}
@@ -11,20 +10,18 @@ hide_streamlit_style = """
 st.set_page_config(layout="wide")
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-# Function to load data
 @st.cache_data()
 def load_data():
     df = pd.read_csv('nuclear_explosions.csv')
     columns_to_fill = ['name']
     for column in columns_to_fill:
-        df[column] = df[column].fillna("Un-named")      # Pre-populating name column with null value
+        df[column] = df[column].fillna("Un-named") 
     return df
 
 df = load_data()
 df['year'] = df['year'].astype(int)
 min_year, max_year = df['year'].min(), df['year'].max()
 
-# Creating a row for the button and the title
 col1, col2 = st.columns([1, 8])
 
 with col1:
