@@ -53,10 +53,10 @@ scatter = ax.scatter(grouped_data['month_year'],
                      linewidth=0.5)
 
 # Create a legend
-legend_labels = {num: country for country, num in country_to_num.items()}
-handles = [plt.Line2D([0], [0], marker='o', color='w', label=legend_labels[num], 
-              markerfacecolor=plt.cm.viridis(num/len(unique_countries)), markersize=10) for num in legend_labels]
-ax.legend(handles=handles, title="Country", bbox_to_anchor=(1.05, 1), loc='upper left')
+# legend_labels = {num: country for country, num in country_to_num.items()}
+# handles = [plt.Line2D([0], [0], marker='o', color='w', label=legend_labels[num], 
+#               markerfacecolor=plt.cm.viridis(num/len(unique_countries)), markersize=10) for num in legend_labels]
+# ax.legend(handles=handles, title="Country", bbox_to_anchor=(1.05, 1), loc='upper left')
 
 tooltip_labels = [
     f"Country: {row['country']}, Kilotons: {row['yield_upper']}, Date: {row['month_year'].strftime('%Y-%m')}"
@@ -72,7 +72,7 @@ plt.tight_layout()
 
 fig_html = mpld3.fig_to_html(fig)
 custom_html = f"""
-<div style="overflow-x: auto; overflow-y: auto; width:120%; height:100vh;">
+<div style="overflow-x: auto; overflow-y: auto; width:100%; height:100vh;">
     {fig_html}
 </div>
 """
