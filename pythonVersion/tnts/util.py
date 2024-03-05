@@ -34,11 +34,12 @@ def resize_gif(input_gif_path, output_gif_path, size):
 
 
 if __name__ == "__main__":
-    a = [20, 200, 800, 1000, 2000, 4000, 10000, 20000, 50000]
+    a = [15, 49, 225, 500, 1690, 5000, 10000, 19100, 50000]
+    # for number in a:
+    #     composite_image = create_composite_tnt(number_of_tnts=number)
+    #     composite_image.save(f'pythonVersion/tnts/tnt{number}.png')
     for number in a:
-        composite_image = create_composite_tnt(number_of_tnts=number)
-        composite_image.save(f'pythonVersion/tnts/tnt{number}.png')
-    # input_gif = 'C:/Users/cy295/Desktop/school 7/cs 485/ds2/Design-for-Understanding/pythonVersion/tnts/exp.gif'
-    # output_gif = 'C:/Users/cy295/Desktop/school 7/cs 485/ds2/Design-for-Understanding/pythonVersion/tnts/exp.gif'
-    # new_size = (400, 320)  # Width, Height in pixels
-    # resize_gif(input_gif, output_gif, new_size)
+        input_gif = f"C:/Users/cy295/Desktop/school 7/cs 485/ds2/Design-for-Understanding/pythonVersion/tnts/exp{number}.gif"
+        output_gif = f"C:/Users/cy295/Desktop/school 7/cs 485/ds2/Design-for-Understanding/pythonVersion/tnts/exp{number}.gif"
+        new_size = (400, 320)  # Width, Height in pixels
+        resize_gif(input_gif, output_gif, new_size)
