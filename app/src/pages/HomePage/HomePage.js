@@ -207,7 +207,7 @@ export default function HomePage() {
           }}
         >
           <Typography sx={{ fontFamily: "PT Mono" }}>
-            <span style={{ fontWeight: "bolder" }}>Persuasive 2</span>{" "}
+            <span style={{ fontWeight: "bolder" }}>Nuclear Explosions IRL</span>{" "}
             <span style={{ fontWeight: "lighter", color: "grey" }}>
               (Multi-View Persuasive)
               <br />
@@ -309,9 +309,11 @@ export default function HomePage() {
               }}
             >
               <Typography sx={{ fontFamily: "PT Mono" }}>
-                <span style={{ fontWeight: "bolder" }}>Persuasive 1</span>{" "}
+                <span style={{ fontWeight: "bolder" }}>
+                  If 20 Kilotons is One Pixel
+                </span>{" "}
                 <span style={{ fontWeight: "lighter", color: "grey" }}>
-                  (Multi-View Persuasive)
+                  (Persuasive)
                   <br />
                   Click to View
                 </span>

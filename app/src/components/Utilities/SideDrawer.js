@@ -75,7 +75,7 @@ export default function TemporaryDrawer() {
             />
           </ListItemButton>
         </ListItem>
-        {/* Fifth: Persuasion one: */}
+        {/* Fifth: GeoSpatial Multi View */}
         <ListItem key={"Persuasion One"} disablePadding>
           <ListItemButton
             onClick={() => {
@@ -84,6 +84,32 @@ export default function TemporaryDrawer() {
           >
             <ListItemText
               primary={"Geospatial Multi-View"}
+              sx={ListItemTextStyle}
+            />
+          </ListItemButton>
+        </ListItem>
+        {/* Sixth: Nuclear Explosions IRL */}
+        <ListItem key={"Nuclear Explosions IRL"} disablePadding>
+          <ListItemButton
+            onClick={() => {
+              window.location.href = "http://18.217.139.7/";
+            }}
+          >
+            <ListItemText
+              primary={"Nuclear Explosions IRL"}
+              sx={ListItemTextStyle}
+            />
+          </ListItemButton>
+        </ListItem>
+        {/* Seventh: if 20 kilotons were one pixel */}
+        <ListItem key={"If 20 Kilotons were 1 Pixel"} disablePadding>
+          <ListItemButton
+            onClick={() => {
+              window.location.href = "http://3.135.199.12/";
+            }}
+          >
+            <ListItemText
+              primary={"If 20 TNT were 1 Pixel"}
               sx={ListItemTextStyle}
             />
           </ListItemButton>

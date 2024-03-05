@@ -24,12 +24,12 @@ const keyToLabel = {
 };
 
 const colors = {
-  INDIA: "lightgray",
-  USSR: "lightgreen",
-  UK: "yellow",
-  USA: "lightblue",
-  CHINA: "blue",
-  FRANCE: "orange",
+  INDIA: "#2A788EFF",
+  USSR: "#440154FF",
+  UK: "#FDE725FF",
+  USA: "#22A884FF",
+  CHINA: "#414487FF",
+  FRANCE: "#7AD151FF",
 };
 
 const stackStrategy = {
