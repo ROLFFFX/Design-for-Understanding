@@ -28,7 +28,7 @@ const textFieldStyle = {
   },
   "& .MuiInputBase-input.Mui-disabled": {
     WebkitTextFillColor: "#212529", // change inner text color
-    fontSize: 14,
+    fontSize: 15,
     fontFamily: "PT Mono",
   },
   "& .MuiOutlinedInput-root": {
@@ -57,6 +57,7 @@ const textFieldStyle = {
     fontSize: 15, // Font size for label when input is focused
     fontFamily: "PT Mono", // Font family for label when input is focused
   },
+  bgcolor: "white",
 };
 
 class CustomLabel extends React.Component {
@@ -186,6 +187,7 @@ Occurrences: ${props.datum.y} times, which accounts for ${percentage}% of all re
                 width: "80%",
                 textAlign: "left",
                 padding: 5,
+                marginLeft: 7,
               }}
               bgcolor={"white"}
             >
