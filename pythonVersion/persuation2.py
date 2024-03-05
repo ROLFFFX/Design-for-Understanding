@@ -18,16 +18,16 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 col1, col2 = st.columns([1, 8])
 
 with col1:
-    st.link_button("Go back", "https://nucexpo.vercel.app/")
+    st.button("Go back", on_click=lambda: st.write("https://nucexpo.vercel.app/"))
 with col2:
     # Use markdown with unsafe_allow_html to customize the header style
     st.markdown("### If Twenty Kilotons is One Pixel", unsafe_allow_html=True)
 
+# Assuming the existence of 'nuclear_explosions.csv' with appropriate columns
 data = pd.read_csv('nuclear_explosions.csv')
 data['date'] = pd.to_datetime(data['date_long'], format='%Y%m%d')
 data['month_year'] = data['date'].dt.to_period('M').dt.to_timestamp()
 data = data[data['date'].dt.year > 1945]
-
 
 grouped_data = data.groupby(['country', 'month_year'])['yield_upper'].sum().reset_index()
 
@@ -52,6 +52,12 @@ scatter = ax.scatter(grouped_data['month_year'],
                      edgecolors='white',
                      linewidth=0.5)
 
+# Create a legend
+legend_labels = {num: country for country, num in country_to_num.items()}
+handles = [plt.Line2D([0], [0], marker='o', color='w', label=legend_labels[num], 
+              markerfacecolor=plt.cm.viridis(num/len(unique_countries)), markersize=10) for num in legend_labels]
+ax.legend(handles=handles, title="Country", bbox_to_anchor=(1.05, 1), loc='upper left')
+
 tooltip_labels = [
     f"Country: {row['country']}, Kilotons: {row['yield_upper']}, Date: {row['month_year'].strftime('%Y-%m')}"
     for _, row in grouped_data.iterrows()
@@ -60,13 +66,8 @@ plugins.connect(fig, plugins.PointLabelTooltip(scatter, labels=tooltip_labels))
 
 ax.set_ylim(-2, len(unique_countries))
 
-
-# plt.yticks(range(len(unique_countries)), unique_countries)
-# plt.xticks(rotation=90)
 plt.ylabel("Countries")
 plt.gca().xaxis.set_major_locator(MaxNLocator(prune='both', nbins=20))
-# debug
-# plt.colorbar(scatter, ax=ax, orientation='vertical', label='Country')
 plt.tight_layout()
 
 fig_html = mpld3.fig_to_html(fig)
@@ -76,9 +77,3 @@ custom_html = f"""
 </div>
 """
 st.components.v1.html(custom_html, height=820, scrolling=False)
-
-# html_file_name = "persuation2.html"  # You can choose any name for the file
-# with open(html_file_name, "w") as file:  # Open a file in write mode
-#     file.write(custom_html)  # Write the HTML content to the file
-
-# print(f"HTML file saved as {html_file_name}")
